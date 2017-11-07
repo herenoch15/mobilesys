@@ -1,0 +1,467 @@
+
+/************ DEBUT CSS loader ***********/
+body #ajax-loader #Contenue_loadear
+{
+	display: inline-block;
+	text-align:center;
+	width:100px;
+	background:#FFF;
+	border-radius:0 0 4px 4px;	-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;
+	font-size:12px;
+}
+body #ajax-loader #Contenue_loadear img
+{
+	margin:0 0 0 7px;
+}
+body #ajax-loader
+{
+	position:fixed;
+	text-align:center;
+	display:block;
+	width:100%;
+	margin:auto auto auto auto;
+	top:0px;
+	z-index:80000;
+}
+
+/************ FIN  CSS loader ************/
+
+
+.container
+{
+	width: auto;
+	padding: 0 0 0 0;
+	margin: auto auto auto auto;
+	overflow-y: auto;
+}
+
+
+/************ DEBUT CSS DEBUT PAGE ************/
+
+#Entete_page
+{
+	background: #326295;
+	position: fixed;
+	width: 100%;
+	z-index: 500;
+	min-height:50px;
+	margin: auto auto auto auto;
+}
+#Entete_page #EnteteMenue
+{
+	position: relative;
+	margin-bottom:0px;
+	background: none;
+}
+#Entete_page #EnteteMenue a
+{
+	color:#ccc;
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	font-size: 17px;
+	font-weight: bold
+}
+#Panelmenue .navbar-toggle
+{
+	margin-right:auto ;
+}
+
+#Panelmenue  #panelFB,
+#Panelmenue #panelIn
+{
+	height: 50px;
+}
+
+#Panelmenue  #FB_menue,
+#Panelmenue #IN_menue
+{
+	color: #fff;
+	height: 27px;
+	width: 27px;
+	display: inline-block;
+	position: relative;
+	top: -4px;
+	left: -10px;
+
+}
+#Panelmenue  #FB_menue
+{
+	background: url("../../assets/images/spritesheet.png") no-repeat center -7px;
+	background-position: -209px -64px;
+}
+#Panelmenue #IN_menue
+{
+	background:url("../../assets/images/spritesheet.png") no-repeat center -7px;
+	background-position: -90px -166px;
+}
+#Panelmenue #menueDroite li {
+
+	height: 37px;
+	width:37px;
+}
+	/************ FIN CSS DEBUT PAGE ************/
+
+
+
+/* CSS BODY PAGE*/
+#BodyPanel
+{
+	width: 100%;
+	z-index: 300;
+	margin: auto auto auto auto;
+	margin-top: auto;
+	height: auto;
+	position: relative;
+	margin-top: 50px;
+	overflow: hidden;
+	background:#fff url("../../assets/images/actufonecran2.jpg") no-repeat 0px -211px;
+	background-size: auto 500px;
+}
+#BodyPanel #body_pageCenter
+{
+	padding-left: 17px;
+	padding-right: 17px;
+}
+#body_pageCenter
+{
+	 padding: 50px 10px 25px 10px ;
+
+}
+
+#body_pageCenter  #Paneltitre #TitrePAge
+{
+	font-size: 35px;
+	display: block;
+	padding-bottom: 5px;
+	color: #07273D;
+	margin-bottom: 25px;
+	text-align: center;
+	margin-top:33px;
+
+
+}
+#body_pageCenter #Paneltitre
+{
+	background: #fff;
+	height: 165px;
+	margin-top: 74px;
+	margin-left: 0;
+	margin-right: 0;
+}
+#body_pageCenter #Paneltitre::after
+{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #2BBA88;
+	margin: 43px auto 37px;
+}
+#body_pageCenter #PanelPAge
+{
+	margin-top:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* DEBUT PIED PAGE CSS ****************/
+#Pied_page
+{
+	background: #326295;
+	margin: auto auto auto auto;
+	padding: 23px 0 0 0;
+}
+
+#Pied_page .list .panel_ ul li .lblserv
+{
+	text-decoration: underline;
+	clear: both;
+	display: block;
+	margin-bottom: 2px
+}
+#Pied_page #lien_piedpage
+{
+	margin: 20px auto 5px auto;
+}
+
+
+
+#Pied_page #droite,#Pied_page #gauche
+{
+
+	display:table-cell;;
+}
+#Pied_page #droite
+{
+	background:#152834;
+	padding: 0 15px 0 0;
+}
+#Pied_page #droite
+{
+	
+}
+#Pied_page  #panelsaisie_email_reseauxsociaux
+{
+	margin: auto 2px auto 2px;
+}
+
+#Pied_page #droite #Emailcct
+{
+	font-size: 19px;
+	width: 100%;
+	color: #fff;
+	background:#152834;
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	height: 50px;
+	border: 0;
+	padding-left: 15px;
+	text-space: 5px;
+
+
+}
+
+#Pied_page #droite #enveloppe_email
+{
+	display: inline-block;
+	padding: 10px 0 0 0;
+	text-align: center;
+
+
+}
+
+
+
+
+#Pied_page #droite .glyphicon-envelope
+{
+	font-size: 30px;
+}
+#Pied_page #droite #btnOK
+{
+	height: 50px;
+	/*width: 50px;*/
+	width: 100%;
+	border-radius: 0px;
+	background: #1c3646;
+	line-height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: "Tungsten Bold",Impact,Charcoal,sans-serif;
+	color: #fff;
+	padding: 0 0 0 0;
+	font-weight: normal;
+}
+
+#Pied_page #gauche .reseaux_sociaux
+{
+
+	/*height: 73px;*/
+	height: 50px;
+
+	display: inline-block;
+}
+#Pied_page  #FB_
+{
+	background: #39569a url("../../assets/images/FB_.png") no-repeat center;
+	color:#fff;
+
+
+}
+#Pied_page  #twitter_
+{
+	background: #14aee8 url("../../assets/images/twitter_.png") no-repeat center;
+
+}
+#Pied_page  #gplus_
+{
+	background: #e04829  url("../../assets/images/gplus_.png") no-repeat center;
+
+}
+#Pied_page #youtube_{
+	background: #c8362e url("../../assets/images/youtube_.png") no-repeat center;
+
+}
+#Pied_page  #copyright
+{
+	color: #ccc;
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	font-size: 12px;
+	border-top: 1px dashed #ccc ;
+	padding: 7px 0 10px 0;
+	margin: auto 4px auto 4px;
+}
+#Pied_page  #copyright .col-sm-12
+{
+	padding-left: 0;
+}
+
+#Pied_page .list .panel_
+{
+	color: #ccc;
+	font-size: 13px;
+}
+#Pied_page .list .panel_ ul
+{
+	padding: 0 0 0 0;
+	list-style: none;
+}
+#Pied_page .list .panel_ ul#contacts_
+{
+	line-height: 22.5px
+}
+#Pied_page #lien_piedpage .list
+{
+	padding: 0 7px 0 7px;
+}
+#Pied_page #lien_piedpage .list#horaire
+{
+
+}
+#Pied_page #lien_piedpage .list .lbltitre_
+{
+
+	font-size: 16px;
+	display: inline-block;
+	width: 100%;
+	color: #07273D;
+	background: #2BBA88;
+	border-radius: 4px;
+	padding: 5px 0 3px 6px;
+}
+#Pied_page #lien_piedpage #droite
+{
+	background: none;
+}
+#Pied_page #lien_piedpage #contacte_
+{
+	padding: 0 0 0 7px;
+}
+#Pied_page #lien_piedpage #srvhoraire
+{
+	line-height: 22.5px;
+}
+#Pied_page #lien_piedpage #gauche.offre
+{
+	padding: 0 0 0 0;
+}
+#Pied_page #lien_piedpage #gauche.offre .list
+{
+	padding: 0 0 0 0;
+
+}
+#Pied_page #lien_piedpage #gauche.offre .list .panel_ ul li
+{
+	line-height: 22.5px;
+}
+#Pied_page #lien_piedpage a
+{
+	color: #ccc;
+}
+
+@media (max-width:  768px) {
+
+	#Pied_page #lien_piedpage .list {
+		padding: 0 0 0 0;
+	}
+
+	#Pied_page #lien_piedpage {
+		margin: 20px auto 20px auto;
+	}
+
+	#Pied_page #copyright {
+		margin: auto 20px auto 0;
+	}
+
+	#Pied_page #droite {
+		background: #152834;
+		padding: 0 0 0 0;
+	}
+
+	#Pied_page #panelINFOMsgcontact {
+
+		display: none;
+
+	}
+}
+
+/******************* FIN PIED PAGE CSS ****************/
+
+
+
+@media screen
+{
+	.Mobile
+	{
+		display:none;
+	}
+}
+@media handheld
+{
+	.PC
+	{
+		display:none;
+	}
+
+}
+
+
+
+
+/****************** DEBUT CSS contact **********************/
+#PanelContactDroite,#PanelContactGauche
+{
+	background: #326295;
+	display: block;
+	padding: 30px 20px 15px 20px ;
+	height: 100%;
+}
+#PanelContactGauche
+{
+	background: none;
+	padding:0 0 15px 0 ;
+}
+#PanelContactGauche #Pays
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #092b62;
+	font-size: 17px;
+}
+#PanelContactGauche #adress,
+#PanelContactGauche .contact
+{
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0 0 4px 0;
+
+}
+
+#PanelContactDroite #lblLaissermsg,
+#PanelContactDroite #lblchampOblig
+{
+	display: block;
+}
+#PanelContactDroite #lblLaissermsg
+{
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase
+}
+#PanelContactDroite #lblchampOblig
+{
+	text-align: right;
+	font-size: 14px;
+	color: #07273D;
+	padding: 7px 0 0 0;
+}
+/****************** FIN CSS contact **********************/

@@ -1,0 +1,74 @@
+/* CSS Document */
+#frm_login
+{
+	text-align:center;
+	height: auto;
+	margin: 5% auto auto auto;
+	background: #326295;
+}
+#frm_login legend
+{
+	color: #ccc;
+}
+@media (min-width: 979px) 
+{
+	.container
+	{
+		
+	/*	max-width: 970px;*/
+	}
+	.lblfrmlogin
+	{
+		width:130px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) 
+{
+	.lblfrmlogin
+	{
+		width:100px;
+	}
+}
+@media (max-width: 768px) 
+{
+	
+	.lblfrmlogin
+	{
+		width:86px;
+	}
+}
+.well {
+background-color:#07273D;
+padding: 20px;
+}
+
+
+#logoinvovo{ width: 100%; }
+
+@media (min-width: 350px) and (max-width: 750px) 
+{
+	#logoinvovo
+	{ 
+	width: 60px;
+	height:60px;
+	
+
+	 }
+}
+@media (min-width: 750px)
+{
+	#logoinvovo
+	{ 
+	width: 66px;
+	height:66px;
+	
+
+	 }
+}
+
+
+.panelfooter
+{
+	text-align:center;
+}

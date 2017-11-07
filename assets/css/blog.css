@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+#item-photo a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.picto-ln-white{
+	display: inline-block;
+    vertical-align: middle;
+    /*padding: 5px 10px 5px 5px;*/
+	width:31px;
+	height:31px;
+	
+}
+.picto-ln-white,
+.picto-fb-white,
+.picto-gp-white{
+	-webkit-transition:-webkit-transform .9s; // Chrome Safari
+	-moz-transition:-moz-transform .9s;       // Mozilla
+	-o-transition:-o-transform .9s;           // Opéra
+	-ms-transition:-ms-transform .9s;         // IE
+	transition:transform .9s;
+}
+.picto-ln-white a:hover,
+.picto-gp-white a:hover,
+.picto-fb-white a:hover{
+	-webkit-transform:rotate(540deg); 
+	-moz-transform:rotate(540deg);
+	-o-transform:rotate(540deg); 
+	-ms-transform:rotate(540deg); 
+	transform:rotate(540deg);
+}
+.picto-ln-white a{
+	background:url(../images/ico-ln-white.png) left;
+	border-radius:100%;	
+}
+.picto-ln-white a{
+	display:block;
+	width:32px;
+	height:31px;	
+	background-repeat:no-repeat;
+}
+.txtphone a:hover{
+	color:#ff4701;
+}
+#item-photo{
+	overflow:hidden;
+}
+#item-photo img{
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+#item-photo a:hover img{
+	transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+}

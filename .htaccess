@@ -1,0 +1,23 @@
+#   Empêche la visualisation de l'arborescence, n'a rien à voir avec le masquage du « index.php ».
+Options -Indexes
+
+#   Active le module de réécriture d'URL.
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+
+#
+#   Fixe les règles de réécriture d'URL. Ici, nous utilisons une liste blanche.
+#
+
+#   Toutes les URL qui ne correspondent pas à ces masques sont réécrites.
+#RewriteCond $1 !^(index\.php|assets/|robots\.txt)
+
+#   Toutes les autres URL vont être redirigées vers le fichier index.php.
+#RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+RewriteRule ^(.*) - [E=BASE:%1]
+RewriteRule ^(.*)$ %{ENV:BASE}index.php [NC,L]

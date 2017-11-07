@@ -1,0 +1,578 @@
+@charset "utf-8";
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+@media (max-width:979px){
+	#toogle{
+		display:block;
+	}
+	#toogle .mnubtn{
+		width:40px;
+		height:30px;
+		float:right;
+		display:block;
+		background:#fff;
+		margin:5px 0 0 0;
+	}
+	#toogle .mnubtn span{
+		background:#ff4701;
+		width:30px;
+		height:3px;
+		margin:5px 0 0 5px;
+		display:block;
+	}
+	#menu{
+		position:relative;
+	}
+	#menu ul{
+		display:none;
+		clear:both;
+		width:100%;
+		background:#ff4701;
+		float:left;
+		height:auto;
+		position:absolute;
+		z-index:100;
+		margin-top: 46px;
+	}
+	#menu ul li{
+		display:block;
+		width:100%;
+	}
+	#menu ul li a{
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	#barre_recherche,
+	#panelsearch{
+		height:auto;
+	}
+	#pan_gauche, #pan_droite{
+		width:100%;
+	}
+	#pan_droite{
+		margin-bottom:20px;
+	}
+	.btnSearch{
+		height:40px;
+	}
+	#slidetexte{
+		height:auto;
+	}
+	#imgblock{
+		width:100%;
+		text-align:center;
+		height:auto;
+		margin:0 0 20px 0;
+	}
+	#txtblock{
+		width:100%;
+		text-align:justify;
+		height:auto;
+	}
+	#txtblock h3{
+		text-align:center;
+	}
+	#imgv{
+		text-align:center;
+	}
+	#imgv,
+	#descrv{
+		width:100%;
+	}
+	#descrv{
+		margin-left:0;
+	}
+	#descrv h3{
+		text-align:center;
+	}
+	#descrv ul{
+		margin-left:10px;
+	}
+	#tarif,
+	#descrv  #reservation{
+		width:98%;
+		margin-left:1%;
+	}
+	#corps-blog{
+		width:100%;
+	}
+	#header-blog-titre{
+		height:auto;
+		line-height:normal;
+		text-align:left;
+	}
+	#header-blog-titre h1{
+		text-align:center;
+	}
+}
+@media (min-width: 781px) and (max-width:979px){
+	#panheader,
+	#menu,
+	#banner-content,
+	#corps_content, 
+	#slidercontent{
+		width:700px;
+	}	
+	#banner-content #reservation{
+		/*float:none;*/
+		display:block;
+		/*position:absolute;*/
+		margin:20px auto;
+	}
+	#imagevoiture,
+	#slogan{
+		display:none;
+	}
+	#blocks #block{
+		margin: 0 21px 21px 0;
+	}
+	#blocks #block.droite{
+		float:none !important;
+	}
+	#custom #content{
+		width:100%;	
+	}
+	#custom .droite{
+		text-align:center;
+	}
+	.blocksearch #pan_droite{
+		width:100% !important;
+		text-align:center;
+	}
+	.blocksearch #pan_droite input{
+		width:98%;
+	}
+	.blog-item{
+		width: 330px;
+		margin: 0 0px 10px 10px;
+	}
+	#item-photo,
+	#item-photo img{
+		width:100%;
+		height:auto;
+	}
+	.clr{
+		clear:none;
+	}
+}
+@media (max-width:786px){
+	.slick-slide img{
+		width:100% !important;
+		height:auto !important;
+	}
+	#resteheader{
+		width:271px;
+	}
+	.grid .bot{
+		width:100% !important;
+	}
+}
+
+@media (min-width: 601px) and (max-width:780px){
+	#panheader,
+	#menu,
+	#banner-content,
+	#corps_content, 
+	#slidercontent{
+		width:570px;
+	}	
+	#banner-content #reservation{
+		float:none;
+		display:block;
+		position:absolute;
+		margin:20px auto;
+	}
+	#imagevoiture,
+	#slogan{
+		display:none;
+	}
+	#blocks #block{
+		margin: 0 21px 21px 0;
+	}
+	#blocks #block.droite{
+		float:none !important;
+	}
+	#custom #content{
+		width:100%;	
+	}
+	#custom .droite{
+		text-align:center;
+	}
+	#vote{
+		height:auto;
+	}
+	#vote #gauche,
+	#vote #droite{
+		background-position: 90% 6px;
+		width:100%;
+	}
+	#custom #content h3{
+		text-align:center;
+	}
+	.res-breadcrumb li .rond{
+		padding:0 5px;
+	}
+	.res-breadcrumb li .libeller{
+		font-size:14px;
+	}
+	.blocksearch #pan_droite{
+		width:100% !important;
+		text-align:center;
+	}
+	.blocksearch #pan_droite input{
+		width:98%;
+	}
+	.offreprix #imgv,
+	.offreprix #descrv{
+		width:100%;
+	}
+	#descrv #col-1{
+		padding:0 !important;
+	}
+	#descrv #col-2{
+		width:47%;
+		margin-left: 5px;
+		margin-top:10px;
+		margin-right:5px;
+	}
+	.blog-item{
+		width: 265px;
+		margin: 0 0px 10px 10px;
+	}
+	#item-photo,
+	#item-photo img{
+		width:100%;
+		height:auto;
+	}
+	.clr{
+		clear:none;
+	}
+	.clr-resp-599{
+		display:block;
+		clear:both;
+	}
+	#header,
+	#panheader{
+		height:160px;
+	}
+	.th{
+		width:49.5%;
+	}
+	
+	
+}
+@media (min-width: 481px) and (max-width:600px){
+	#panheader,
+	#menu,
+	#banner-content,
+	#corps_content, 
+	#slidercontent{
+		width:450px;
+	}
+	#header,
+	#panheader{
+		height:160px;
+	}
+	.clr-resp-599{
+		display:block;
+		clear:both;
+	}
+	#resteheader{
+		margin-top:10px;
+	}
+	#imagevoiture{
+		display:none;
+	}
+	#vote{
+		height:auto;
+	}
+	#vote #gauche,
+	#vote #droite{
+		background-position: 90% 6px;
+		width:100%;
+	}
+	#blocks #block{
+		margin: 21px auto;
+		float:none !important;
+	}
+	#blocks #block.droite{
+		float:none !important;
+		margin: 21px auto;
+	}
+	#custom #content{
+		width:100%;	
+	}
+	#custom .droite{
+		text-align:center;
+	}
+	#custom #content h3{
+		text-align:center;
+	}
+	#footer #corps_content > div {
+		width: 100%;
+		margin:10px 0;		
+	}
+	#logo_bottom{
+		text-align:center;
+	}
+	.pan_champ{
+		width:98%;
+	}
+	.res-breadcrumb li .rond{
+		padding:0 5px;
+	}
+	.res-breadcrumb li .libeller{
+		font-size:10px;
+	}
+	.blocksearch #pan_droite{
+		width:100% !important;
+		text-align:center;
+	}
+	.blocksearch #pan_droite input{
+		width:98%;
+	}
+	#imgv img{
+		width:97%;
+	}
+	.offreprix #imgv,
+	.offreprix #descrv{
+		width:100%;
+	}
+	#descrv #col-1{
+		padding:0 !important;
+	}
+	#descrv #col-2{
+		width:47%;
+		margin-left: 5px;
+		margin-top:10px;
+		margin-right:5px;
+	}
+	.blog-item{
+		width: 205px;
+		margin: 0 0px 10px 10px;
+	}
+	#item-photo,
+	#item-photo img{
+		width:100%;
+		height:auto;
+	}
+	.clr{
+		clear:none;
+	}
+	.th{
+		width:99.5%;
+	}
+	.grid #cols{
+		width:100%;
+	}
+}
+@media (max-width:480px){
+	#panheader,
+	#menu,
+	#banner-content,
+	#corps_content, 
+	#slidercontent{
+		width:287px;
+	}
+	#panheader,
+	#header{
+		height:245px;
+		float:none;
+	}
+	#header{
+		/*float:left;*/
+	}
+	#panheader,
+	#logo {
+		width:100%;
+	}
+	#logo {
+		text-align:center;
+	}
+	#resteheader{
+		width:70%;
+		float:none;
+		margin:10px auto;
+	}
+	#rhtop{
+		width:187px;
+	}
+	#rhtop, #rhbottom{
+		float:none;
+	}
+	#rhbottom a{
+		text-align:center;
+	}
+	#banner-content #reservation{
+		width:100%;
+		height:auto;
+		padding-bottom: 12px;
+	}
+	#reservation h1{
+		font-size:100%;
+	}
+	#reservation #lignehalf {
+    	width: 100%;
+	}
+	#banner{
+		height:495px;
+	}
+	#imagevoiture{
+		display:none;
+	}
+	#slogan{
+		width:100%;
+	}
+	#vote{
+		height:auto;
+		margin: 10px 0;
+	}
+	#vote #gauche,
+	#vote #droite{
+		background-image:none;
+		width:100%;
+		height:auto;
+	}
+	#blocks #block{
+		margin: 21px auto;
+		float:none !important;
+		width:100%;
+	}
+	#blocks #block.droite{
+		float:none !important;
+		margin: 21px auto;
+	}
+	#btnvote {
+		margin:10px auto;
+	}
+	#blocks .droite.bgorange{
+		background-color:transparent !important;
+	}
+	#custom #content{
+		width:100%;	
+	}
+	#custom .droite{
+		text-align:center;
+	}
+	#custom #content p {		
+		text-align: justify;
+	}
+	#custom .droite img{
+		width:100%;
+	}
+	#custom #content h3{
+		text-align:center;
+	}
+	#footer #corps_content > div {
+		width: 100%;
+		margin:10px 0;		
+	}
+	#logo_bottom{
+		text-align:center;
+	}
+	.pan_champ{
+		width:100%;
+	}
+	#imgv img{
+		width:96%;
+	}
+	#bottom{
+		height:auto;
+	}
+	#mnuBottom, #txtbottom{
+		width:100%;
+	}
+	.lien-reserv{
+		width: 220px;
+	}
+	#menu_bottom ul li{
+		width:100%;
+		display:block;
+	}
+	#coords{
+		text-align:center;
+	}
+	#menu_bottom ul li a{
+		display:block;
+		text-align:center;
+	}
+	.pan_champ{
+		width:96%;
+	}
+	.res-breadcrumb li{
+		display:inline-block;
+		width:100%;
+		margin:0 0 10px 10px;
+	}
+	.res-breadcrumb li .rond{
+		padding:0 5px;
+	}
+	.res-breadcrumb li .libeller{
+		font-size:10px;
+	}
+	.blocksearch #pan_droite{
+		width:100% !important;
+		text-align:center;
+	}
+	.blocksearch #pan_droite input{
+		width:98%;
+	}
+	#modblock #col-1{
+		width:100%;
+		margin:10px 0;
+	}
+	.offreprix #imgv,
+	.offreprix #descrv{
+		width:100%;
+	}
+	#modblock #col-1{
+		width:100%;
+	}
+	#descrv #col-1{
+		padding:0 !important;
+	}	 
+	#descrv #col-2{
+		width:45%;
+		margin-left: 5px;
+		margin-top:10px;
+		margin-right:5px;
+	}
+	#modblock form p span,
+	#modblock form label{
+		width:100%;
+	}
+	.blog-item{
+		width: 265px;
+		margin: 0 0px 10px 10px;
+	}
+	#item-photo,
+	#item-photo img{
+		width:100%;
+		height:auto;
+	}
+	.clr{
+		clear:none;
+	}
+	.champs input, 
+	.champshalf input, 
+	.champshalf select, 
+	.champs select{
+		width:80%;
+	}
+	#contact-middle{
+		width:100%;
+	}
+	#boxfltr{
+		width:95%;
+	}
+	.th{
+		width:99.5%;
+	}
+	.grid #cols{
+		width:100%;
+	}
+}
+
+
