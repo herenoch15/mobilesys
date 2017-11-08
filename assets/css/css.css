@@ -202,12 +202,18 @@ body #ajax-loader
 }
 #Pied_page #droite
 {
-	background:#152834;
+	/*background:#152834;*/
 	padding: 0 15px 0 0;
 }
-#Pied_page #droite
+#Pied_page #droite .row
 {
-	
+	margin-left: 6px;
+	margin-right: 0px;
+	background:#152834;
+}
+#Pied_page #droite .row .col-sm-2
+{
+	padding-right: 0;
 }
 #Pied_page  #panelsaisie_email_reseauxsociaux
 {
