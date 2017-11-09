@@ -21,6 +21,7 @@ class Homeadmin extends CI_Controller
         $this->layout->ajouter_js("jquery-3.2.1");
         $this->layout->ajouter_js("ajax_nav");
         $this->layout->ajouter_js("bootstrap.min");
+        $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js_login");
 
 
