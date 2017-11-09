@@ -24,9 +24,8 @@ body #ajax-loader
 	z-index:80000;
 }
 
+
 /************ FIN  CSS loader ************/
-
-
 .container
 {
 	width: auto;
@@ -98,7 +97,7 @@ body #ajax-loader
 	height: 37px;
 	width:37px;
 }
-	/************ FIN CSS DEBUT PAGE ************/
+/************ FIN CSS DEBUT PAGE ************/
 
 
 
@@ -399,6 +398,28 @@ body #ajax-loader
 	}
 }
 
+#Msgbox_nouscantacter .modal-content
+{
+	background:#152834;
+}
+#Msgbox_nouscantacter #panelINFOMsgcontact
+{
+	display: none;
+}
+#Msgbox_nouscantacter .modal-title
+{
+	color: #fff;
+}
+.modal-backdrop.fade.in
+{
+
+	background: #326295;
+	opacity: 0.5;
+}
+#Msgbox_nouscantacter #INFOMsgcontact
+{
+   color: red;
+}
 /******************* FIN PIED PAGE CSS ****************/
 
 
@@ -456,6 +477,7 @@ body #ajax-loader
 {
 	display: block;
 }
+
 #PanelContactDroite #lblLaissermsg
 {
 	font-size: 17px;

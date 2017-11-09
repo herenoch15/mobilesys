@@ -1,31 +1,34 @@
 //NOUS CONTACT BTN OK
-//
+
 $(document).ready(function (e)
 {
+
+
+    //Fonction fermeture fenetre
+    $(".modal .close").click(function (e){
+
+        $(".modal").modal("hide");
+
+    });
+
+
 
 
     $("#btnOK").click(function (e)
     {
 
-        email_=$("#Emailcct").val();
-        if(email_!="")
+        emailval=$("#Emailcct").val()
+        if(emailval!="")
         {
 
-            email_valid=Test_adresse_email(email_);//appel fonction test si l'adresse email est valide ou non
+            email_valid=Test_adresse_email(emailval);//appel fonction test si l'adresse email est valide ou non
             if(email_valid==true)
             {
-                $("#Emailcctmessage").val(email_);
+                $("#Emailcctmessage").val(emailval);
 
                 $("#Msgbox_nouscantacter").modal({
                     keyboard: true,
                     show: true});
-                //$("#frm_contactcmcas #nom_cct_").focus();
-                //$("#nom_cct_").val("");
-
-
-                //alert("email invalid");
-
-
             }
             else
             {
@@ -35,13 +38,61 @@ $(document).ready(function (e)
 
             }
 
+        }
+
+    });
+
+
+
+
+
+
+    //****************** DEBUT BUTTON ENVOYER CONTACT **********************
+    $("#btn_envoyermsg").click(function (e)
+    {
+
+
+        // Test si le nom ou prenom ou email ou message vide
+        var nom_=$("#nom_cct_").val();
+        var prenom_=$("#prenom_cct_").val();
+        var email_=$("#Emailcct").val();
+        var message_=$("#message_").val();
+        var message_erreur="";
+
+        if(nom_=="" || prenom_=="" || email_=="" || message_=="")
+        {
+
+
+                if(nom_=="")
+                {
+                    message_erreur="nom";
+                }
+                if(prenom_=="")
+                {
+                    message_erreur != "" ? message_erreur = message_erreur + " ,prenom" : message_erreur = "prenom";
+                }
+
+                if(email_=="")
+                {
+                    message_erreur!=""? message_erreur=message_erreur+" ,email" :message_erreur="email" ;
+                }
+                if(message_=="")
+                {
+                    message_erreur!=""?   message_erreur=message_erreur+" , message" : message_erreur="message" ;
+                }
+
+
+            $("#panelINFOMsgcontact").css("display","block");
+            $("#INFOMsgcontact").html("Saisissez votre "+message_erreur);
 
 
         }
 
-        //return false;
+
 
     });
+    //************* FIN BUTTON ENVOYER CONTACT ****************************
+
 
 
 });
