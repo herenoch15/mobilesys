@@ -139,16 +139,16 @@
                 <div class="modal-body">
 
                     <div class="row">
-                        <div class="col-sm-10 form-group"><input value="" name="nom_cct_" id="nom_cct_" placeholder="Votre nom" class="form-control" ></div>
+                        <div class="col-sm-9 form-group"><input value="" name="nom_cct_" id="nom_cct_" placeholder="Votre nom" class="form-control" ></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-10 form-group"><input value="" name="prenom_cct_" id="prenom_cct_" placeholder="Votre prenom" class="form-control" ></div>
+                        <div class="col-sm-9 form-group"><input value="" name="prenom_cct_" id="prenom_cct_" placeholder="Votre prenom" class="form-control" ></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-10 form-group"><input value="" type="email" name="Emailcctmessage" id="Emailcctmessage" type="email" placeholder="Votre email" class="form-control" ></div>
+                        <div class="col-sm-9 form-group"><input value="" type="email" name="Emailcctmessage" id="Emailcctmessage" type="email" placeholder="Votre email" class="form-control" ></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 form-group"> <textarea rows="4" name="message_" id="message_" placeholder="Message" class="form-control"></textarea></div>
+                        <div class="col-sm-12 form-group"> <textarea rows="5" name="message_" id="message_" placeholder="Message" class="form-control"></textarea></div>
                     </div>
                     <div id="panelINFOMsgcontact" class="row">
                         <div class="col-sm-12 form-group"><label id="INFOMsgcontact"></label></div>

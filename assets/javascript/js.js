@@ -17,7 +17,8 @@ $(document).ready(function (e)
     $("#btnOK").click(function (e)
     {
 
-        emailval=$("#Emailcct").val()
+        emailval=$("#Emailcct").val();
+        $("#panelINFOMsgcontact").css("display","none");
         if(emailval!="")
         {
 
