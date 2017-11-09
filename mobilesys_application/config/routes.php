@@ -52,6 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] = 'welcome';
 $route['default_controller'] = 'accueil';
 $route['Administrateur'] = "Administrateur/Homeadmin";
+$route['Administrateur/testLogin'] = "Administrateur/homeadmin/testLogin";
+
 
 $route['nos-services'] = "services";
 $route['nos-realisations'] = "realisations";

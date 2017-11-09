@@ -4,6 +4,8 @@
 $(document).ready(function (e)
 {
 
+
+
         $(".modal .close").click(function (e)
         {
             $(".modal").modal("hide");
@@ -21,6 +23,18 @@ $(document).ready(function (e)
                      keyboard:true,
                      show:true
                  });
+             }else
+             {
+
+                 lienFormlogin=$("#frm_login").attr("action");
+                 dataLogin=$("#frm_login").serializeArray();
+                 $.post(lienFormlogin,dataLogin,function (e)
+                 {
+                        alert(e);
+                 });
+
+
+
              }
             return false;
 

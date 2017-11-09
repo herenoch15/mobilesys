@@ -1,7 +1,7 @@
 
 <input id="typeconnexion" type="hidden" value="<?php // print ($connexion); ?>">
 <div class="row">
-    <form id="frm_login" class="form-horizontal well col-xs-10 col-xs-push-1 col-xs-pull-1 col-sm-8 col-sm-push-2 col-sm-pull-2  col-md-6 col-md-push-3 col-md-pull-3" method="post" action="" >
+    <form id="frm_login" class="form-horizontal well col-xs-10 col-xs-push-1 col-xs-pull-1 col-sm-8 col-sm-push-2 col-sm-pull-2  col-md-6 col-md-push-3 col-md-pull-3" method="post" action="<?php print site_url("/Administrateur/testLogin"); ?>" >
 
         <div class="row">
             <div class="col-xs-4 col-sm-2 col-md-2"><img  id="logoinvovo" src="assets/images/icoinvovo.png"></div>
