@@ -9,17 +9,59 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class MY_Controller extends  CI_Controller
 {
 
+    public $loginAdmin;
+    public $passwordAdmin;
+
+    function __construct()
+    {
+
+
+        parent::__construct();
+        $this->load->model('Users_model');
+
+
+
+    }
 
 
     public  function  testLogin()
     {
 
-        $login=@$this->input->post('login');
-        $password=@$this->input->post('password');
+        $this->loginAdmin=@$this->session->userdata("loginAdmin");
+        $this->passwordAdmin=@$this->session->userdata("passwordAdmin");
+        if($this->loginAdmin!="" && $this->passwordAdmin!="")
+        {
 
-       // var_dump($login);
-       // var_dump($password);
-       // print ("TEST LOGIN");
+            return true;
+        }
+        else if(@$this->input->post('login')!="" &&  @$this->input->post('password')!="")
+        {
+            $login=@$this->input->post('login');
+            $password=@$this->input->post('password');
+
+            $user_test = array();
+            $user_test['login'] = $login;
+            $user_test['password'] = $password ;
+
+
+            $userResult = $this->Users_model->count($user_test);
+            if($userResult==1)
+            {
+                $this->loginAdmin=$login;
+                $this->passwordAdmin=$password;
+
+                $this->session->set_userdata('loginAdmin', '$this->loginAdmin');
+                $this->session->set_userdata('passwordAdmin', '$this->passwordAdmin');
+
+                return true;
+            }
+
+        }
+
+        return false;
+
+
+
     }
 
 
@@ -41,5 +83,18 @@ class MY_Controller extends  CI_Controller
         $this->layout->view("Administrateur/Login/View_login");
 
     }
+
+
+    public function testLoginAdmin()
+    {
+        if($this->testLogin()!=true)
+        {
+            redirect("Administrateur");// Redirige vers la page d'accueil
+        }
+    }
+
+
+
+
 
 }

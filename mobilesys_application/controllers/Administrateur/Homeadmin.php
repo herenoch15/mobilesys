@@ -10,7 +10,26 @@ class Homeadmin extends MY_Controller
     }
     public function index()
     {
-        $this->loginAdmin();
+
+        if($this->testLogin()==true)
+            $this->_Principale();
+        else
+            $this->loginAdmin();
+
+    }
+
+   public function _Principale()
+   {
+
+       redirect('Administrateur/messages');
+
+   }
+
+    public function logout()
+    {
+            // Détruit la session
+            $this->session->sess_destroy();
+            redirect('/Administrateur/');
     }
 
 

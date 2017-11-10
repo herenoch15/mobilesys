@@ -30,7 +30,7 @@ $(document).ready(function (e)
                  dataLogin=$("#frm_login").serializeArray();
                  $.post(lienFormlogin,dataLogin,function (e)
                  {
-                        alert(e);
+                        window.location.href="";
                  });
 
 
