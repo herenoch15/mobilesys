@@ -3,10 +3,11 @@
  * Created by PhpStorm.
  * User: herenoch
  * Date: 10/11/2017
- * Time: 09:38
+ * Time: 10:24
  */
+
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Services extends MY_Controller
+class Realisations extends MY_Controller
 {
     function __construct()
     {
@@ -19,6 +20,7 @@ class Services extends MY_Controller
     public function index()
     {
 
+        print ("ccc");
     }
 }
 ?>

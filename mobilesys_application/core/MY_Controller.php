@@ -23,7 +23,7 @@ class MY_Controller extends  CI_Controller
 
     }
 
-
+    //Test login
     public  function  testLogin()
     {
 
@@ -69,12 +69,11 @@ class MY_Controller extends  CI_Controller
     //View login affichage administrateur si  l'admin n'est pas connecter
     public  function loginAdmin()
     {
-        $this->layout->set_titre("MobileSys | Login");
+        $this->layout->set_titre("MobileSys Admin | Login");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css_login");
 
         $this->layout->ajouter_js("jquery-3.2.1");
-        $this->layout->ajouter_js("ajax_nav");
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js_login");
@@ -85,6 +84,7 @@ class MY_Controller extends  CI_Controller
     }
 
 
+    //test login + redirectin vers la formulaire du login s'il nes pas connecter
     public function testLoginAdmin()
     {
         if($this->testLogin()!=true)
