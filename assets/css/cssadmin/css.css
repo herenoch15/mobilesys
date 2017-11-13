@@ -2,3 +2,8 @@
 {
     margin-top: 20px;
 }
+li#logout
+{
+    float: right;
+    margin-top: -9px;
+}
