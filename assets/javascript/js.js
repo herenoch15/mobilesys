@@ -100,14 +100,7 @@ $(document).ready(function (e)
 
     });
     //************* FIN BUTTON ENVOYER CONTACT ****************************
-
-
-
-
-
-
-
-
+    
 
 /*
     $("#toTop").click(function(e)
