@@ -30,8 +30,10 @@ class Messages extends MY_Controller
         $this->layout->ajouter_js("jsadmin/js");
 
 
+        $data=array();
+        $data["active"]="Messages";
 
-        $this->layout->views("Administrateur/headerAdmin");
+        $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/Messages/viewlistMessages");
         $this->layout->view("Administrateur/footerAdmin");
     }

@@ -17,6 +17,8 @@ $(document).ready(function (e)
     $("#btnOK").click(function (e)
     {
 
+
+
         emailval=$("#Emailcct").val();
         $("#panelINFOMsgcontact").css("display","none");
         if(emailval!="")
@@ -41,6 +43,7 @@ $(document).ready(function (e)
 
         }
 
+
     });
 
 
@@ -51,6 +54,8 @@ $(document).ready(function (e)
     //****************** DEBUT BUTTON ENVOYER CONTACT **********************
     $("#btn_envoyermsg").click(function (e)
     {
+
+
 
 
         // Test si le nom ou prenom ou email ou message vide
@@ -91,10 +96,25 @@ $(document).ready(function (e)
 
 
 
+
+
     });
     //************* FIN BUTTON ENVOYER CONTACT ****************************
 
 
+
+
+
+
+
+
+
+/*
+    $("#toTop").click(function(e)
+    {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+*/
 
 });
 

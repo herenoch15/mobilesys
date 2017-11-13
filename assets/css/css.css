@@ -420,6 +420,16 @@ body #ajax-loader
 {
    color: red;
 }
+/*
+#toTop
+{
+	float: right;
+	position: fixed;
+	bottom: 0px;
+	right: 15px;
+	z-index: 999;
+}*/
+
 /******************* FIN PIED PAGE CSS ****************/
 
 

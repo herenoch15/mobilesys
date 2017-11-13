@@ -113,6 +113,11 @@
                 <div class="col-sm-12">© Copyright© 2017 MobileSys. Tous droits réservé </div>
             </div>
 
+            <?php
+              // <div id="toTop"><img src="<?php print(site_url("/assets/images/totop.png"));  ?>"></div>
+            ?>
+
+
         </div>
     </div>
 

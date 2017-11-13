@@ -66,7 +66,7 @@ class MY_Controller extends  CI_Controller
 
 
 
-    //View login affichage administrateur si  l'admin n'est pas connecter
+    //View formulaire login  Administrateur
     public  function loginAdmin()
     {
         $this->layout->set_titre("MobileSys Admin | Login");
