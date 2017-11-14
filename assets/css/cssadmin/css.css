@@ -1,9 +1,36 @@
 #headerAdmin
 {
     margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
 }
 li#logout
 {
     float: right;
     margin-top: -9px;
 }
+
+
+
+
+
+/**************************** CSS MESSAGES ***************************/
+.list-messages
+{
+    border-bottom: 1px solid #ccc;
+    padding: 4px 0 4px 0;
+}
+.list-messages .nom-prenom
+{
+    font-weight: bold;
+    font-size: 12px;
+}
+.list-messages .titre-message
+{
+    font-size: 12px;
+}
+.list-messages .message
+{
+ font-size: 11px;
+}
+/**************************** FIN CSS MESSAGES ***********************/

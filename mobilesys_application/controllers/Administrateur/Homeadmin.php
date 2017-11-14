@@ -34,7 +34,7 @@ class Homeadmin extends MY_Controller
        $data["active"]="Accueil";
 
        $this->layout->views("Administrateur/headerAdmin",$data);
-       $this->layout->views("Administrateur/Messages/viewlistMessages");
+       $this->layout->views("Administrateur/homepageAdmin");
        $this->layout->view("Administrateur/footerAdmin");
 
    }

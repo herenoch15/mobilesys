@@ -33,7 +33,7 @@ class Realisations extends MY_Controller
         $data["active"]="Realisations";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/Messages/viewlistMessages");
+        $this->layout->views("Administrateur/Realisation/viewlistRealisation");
         $this->layout->view("Administrateur/footerAdmin");
     }
 }

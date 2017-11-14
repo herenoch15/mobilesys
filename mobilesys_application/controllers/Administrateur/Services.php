@@ -31,7 +31,7 @@ class Services extends MY_Controller
         $data["active"]="Services";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/Messages/viewlistMessages");
+        $this->layout->views("Administrateur/Services/viewlistServices");
         $this->layout->view("Administrateur/footerAdmin");
 
     }
