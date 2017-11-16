@@ -113,7 +113,7 @@ body #ajax-loader
 	margin-top: 50px;
 	overflow: hidden;
 	background:#fff url("../../assets/images/actufonecran2.jpg") no-repeat 0px -211px;
-	background-size: auto 500px;
+	background-size: auto 485px;
 }
 #BodyPanel #body_pageCenter
 {
@@ -141,7 +141,7 @@ body #ajax-loader
 #body_pageCenter #Paneltitre
 {
 	background: #fff;
-	height: 165px;
+	height: 150px;
 	margin-top: 74px;
 	margin-left: 0;
 	margin-right: 0;
@@ -157,14 +157,59 @@ body #ajax-loader
 }
 #body_pageCenter #PanelPAge
 {
-	margin-top:40px;
+	margin-top:28px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#body_pageCenter  .sousTitrepage
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #07273D;
+	float: left;
+	margin-right: 23px;
+	font-family: "Tungsten Bold",Impact,Charcoal,sans-serif;
+}
+#body_pageCenter .lineTitrepage
+{
+	content: '';
+	border-bottom: 4px solid;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-top: -5px;
+
+}
+#body_pageCenter .detailllepage
+{
+	font-size: 12px;
+	text-align: justify;
+}
+
+/*************** DEBUT  CSS Services ****************/
+#servicesPage .listservice .imagesServices img
+{
+	width: 100%;
+	width: 100%;
+}
+#servicesPage .listservice
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 
-
-
-
-
+#servicesPage .listservice .detailleServices
+{
+	font-size: 14px;
+}
+#servicesPage
+{
+margin-right: 30px;
+margin-left: 30px;
+margin-top: 20px;
+}
+/*************** FIN CSS Services ****************/
 
 
 

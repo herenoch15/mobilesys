@@ -21,7 +21,8 @@
             <div class="col-sm-12">
                 <div class="nom-prenom">Narindra Rakotojaona</div>
                 <div class="titre-message">Besoin d'infos sure votre offre</div>
-                <div class="message">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </div>
+                    <div class="message"><div id="PanelPAge" class="row">
+                        </div>
             </div>
         </div>
 
