@@ -21,9 +21,10 @@
                 <div class="col-md-8 col-sm-12">
                    <p class="detailleServices">Conception site web et développement : site professionnel, site vitrine, site e-commerce (site prestashop, magento marketplace...), site spécifique… | Intégration sur mobile, desktop et site responsive design | Création de visuel : charte graphique, logo… Notre équipe de développement web est à la hauteur de toutes vos demandes : de la fonctionnalité la plus courante aux plus improbables.</p>
                     <div class="row panelImagesappServ">
-                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/symfony_black.jpg")); ?>"></div></div>
-                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/symfony_black.jpg")); ?>"></div></div>
-                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/symfony_black.jpg")); ?>"></div></div>
+                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/html5.png")); ?>"></div></div>
+                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/php.png")); ?>"></div></div>
+                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/wordpress.png")); ?>"></div></div>
+                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/codeIgniter.png")); ?>"></div></div>
                         <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/symfony_black.jpg")); ?>"></div></div>
                     </div>
                 </div>
@@ -42,8 +43,8 @@
                 <div class="col-md-8 col-sm-12">
                     <p class="detailleServices">Conception et développement Android, iOS et Windows Phone | Applications natives ou hybrides, BtoC et BtoB couplées d’un système d’information | Interfaces ergonomiques et intuitives avec des fonctionnalités mobiles innovantes : QR Code NFC… Notre équipe de développeurs d’applications mobiles prend en charge tous types de projets. Pour votre première application mobile, choisissez une équipe qui sera attentive à toutes vos exigences.</p>
                     <div class="row panelImagesappServ">
-                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/xamarin.jpg")); ?>"></div></div>
-                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/xamarin.jpg")); ?>"></div></div>
+                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/ios.png")); ?>"></div></div>
+                        <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/android.png")); ?>"></div></div>
                         <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/xamarin.jpg")); ?>"></div></div>
                         <div class="col-sm-2 col-xs-2"><div class="panelcontour" ><img src="<?php print (site_url("assets/images/xamarin.jpg")); ?>"></div></div>
                     </div>
