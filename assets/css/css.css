@@ -203,6 +203,22 @@ body #ajax-loader
 {
 	font-size: 14px;
 }
+#servicesPage .listservice .panelImagesappServ
+{
+	margin-top: 25px;
+}
+#servicesPage .listservice .panelImagesappServ .panelcontour
+{
+	background: #fff none repeat scroll 0 0;
+	border: 3px solid #f6f6f6;
+	border-radius: 50%;
+	/*box-shadow: 10px 10px 5px #326295;*/
+}
+/*
+#servicesPage .listservice .panelImagesappServ .panelcontour img
+{
+  padding: 5px 5px;
+}*/
 #servicesPage
 {
 margin-right: 30px;
