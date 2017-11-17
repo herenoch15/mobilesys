@@ -214,6 +214,10 @@ body #ajax-loader
 	border-radius: 50%;
 	/*box-shadow: 10px 10px 5px #326295;*/
 }
+#servicesPage .listservice .appDev
+{
+	cursor: pointer;
+}
 /*
 #servicesPage .listservice .panelImagesappServ .panelcontour img
 {
