@@ -243,6 +243,12 @@ margin-top: 20px;
 	margin-bottom: 5px;
 	text-align: justify;
 }
+#infoServices .modal-content
+{
+
+	border: 1px solid #326295;
+	box-shadow: 0 0 15px #326295;
+}
 
 /*************** FIN CSS Services ****************/
 
