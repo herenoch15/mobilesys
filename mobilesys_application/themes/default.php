@@ -18,12 +18,12 @@ $as_json = false;
           <?php
       	  if(!$metadescr)
           {
-      	     ?><meta name="description" content="L’entreprise HAPPY LOC propose un service de location de véhicules : voitures légères, utilitaires etc. Nous disposons d’une large gamme de voitures neuves disponibles rapidement et à des prix très compétitifs.">
+      	     ?><meta name="description" content="">
           <?php			
       	  }
       	  if(!$metakeyword)
           {
-      	    ?><meta name="keyword" content="Location de voiture à la réunion">
+      	    ?><meta name="keyword" content="">
           <?php
       		}
       	  ?>

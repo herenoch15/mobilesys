@@ -225,6 +225,25 @@ margin-right: 30px;
 margin-left: 30px;
 margin-top: 20px;
 }
+#infoServices
+{
+	top:30%
+}
+#infoServices .modal-title
+{
+	text-align: center;
+
+}
+#infoServices .modal-body
+{
+	margin-top: 5px;
+	margin-bottom: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	text-align: justify;
+}
+
 /*************** FIN CSS Services ****************/
 
 

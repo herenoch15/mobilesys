@@ -4,6 +4,23 @@ $(document).ready(function (e)
 {
 
 
+    //JS SERVICES
+    $(document).on("click",".appDev",function (e)
+    {
+
+        $("#infoServices").modal({
+            keyboard: true,
+            show: true});
+
+    });
+
+
+
+
+
+
+
+
     //Fonction fermeture fenetre
     $(".modal .close").click(function (e){
 

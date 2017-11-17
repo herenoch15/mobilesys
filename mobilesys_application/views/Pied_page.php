@@ -82,23 +82,8 @@
                         <div class="panel_">
                             <ul>
                                 <li><a href="">Développement Web</a></li>
-                                <li><a href="">Développement Application mobile</a></li>
-                                <li><a href="">Maintenance informatique</a></li>
-
-                                <?php
-
-                                /*
-                                foreach($offre_list as $offres)
-                                {
-                                    ?>
-                                    <li><a href="<?php print (site_url("/offres#".$offres->titre)); ?>"><?php print ($offres->titre);?></a></li>
-
-                                    <?php
-                                }
-                                */
-
-
-                                ?>
+                                <li><a href="">Applications mobiles</a></li>
+                                <li><a href="">Systèmes et réseaux</a></li>
                             </ul>
                         </div>
 
@@ -176,3 +161,16 @@
 
 
 
+
+    <div class="modal" id="infoServices">
+        <div class="modal-dialog"> <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-
+                            dismiss="modal">x</button>
+                    <h4 class="modal-title">HTML5</h4>
+                </div>
+                <div class="modal-body">
+                    HTML est le langage de balisage du web. La version 5 est de loin la plus complète. Peu importe l’envergure de l’architecture d’un site, HTML 5 est efficace. De plus avec ses nouveaux éléments et attributs, on peut développer des sites dynamiques et géolocalisés.
+                </div>
+            </div> </div>
+    </div>
