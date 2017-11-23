@@ -257,6 +257,9 @@ var ajaxRequest = new (function () {
 })();
 function change_lienMenue(url_)
 {
+
+
+    $("#btnBarr").click();
     //alert("cc");
 	//url_=oPageInfo.url;
 				//alert(lienMenue_);
