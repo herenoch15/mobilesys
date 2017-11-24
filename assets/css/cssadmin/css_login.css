@@ -1,4 +1,9 @@
 /* CSS Document */
+
+body{
+	background: url("../../../assets/images/fondLogin.jpg") no-repeat;
+	background-size:100% 300%;
+}
 #frm_login
 {
 	text-align:center;

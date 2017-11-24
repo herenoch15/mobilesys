@@ -23,6 +23,7 @@ var ajaxRequest = new (function () {
             case 200:
 				//alert(this.responseText);
                 vMsg = JSON.parse(this.responseText);
+              // console.log(vMsg);
                 document.title = oPageInfo.title = vMsg.page;
 				
                 $("#body_pageCenter").html(vMsg.content);

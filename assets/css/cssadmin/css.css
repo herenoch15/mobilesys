@@ -1,3 +1,8 @@
+.container
+{
+    width: 100%;
+}
+
 #headerAdmin
 {
     margin-top: 20px;
