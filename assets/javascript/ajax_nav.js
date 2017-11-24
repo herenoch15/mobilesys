@@ -259,6 +259,8 @@ function change_lienMenue(url_)
 {
 
 
+
+    if($("#btnBarr").css("display")!="none")
     $("#btnBarr").click();
     //alert("cc");
 	//url_=oPageInfo.url;
