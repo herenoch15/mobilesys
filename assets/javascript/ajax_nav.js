@@ -118,12 +118,25 @@ var ajaxRequest = new (function () {
 
     function processLink ()
 	{
-			
 
-		
-		
-        	if (this.className === sAjaxClass) 
+
+
+
+
+
+        	 if (this.className === sAjaxClass)
 			{
+
+
+
+
+                if($(this).attr("menueP"))
+                {
+
+                    $(".ajax-nav,.navbar-brand").removeClass("active");
+                    $(this).addClass("active");
+                }
+
 				//rechecher les lien et associer à la menue qui est vient de clicker
 				
 

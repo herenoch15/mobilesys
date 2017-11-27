@@ -99,7 +99,7 @@
             </div>
 
             <?php
-              // <div id="toTop"><img src="<?php print(site_url("/assets/images/totop.png"));  ?>"></div>
+              /* <div id="toTop"><img src="<?php print(site_url("/assets/images/totop.png"));  ?>"></div>*/
             ?>
 
 

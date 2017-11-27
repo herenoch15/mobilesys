@@ -4,6 +4,16 @@ $(document).ready(function (e)
 {
 
 
+
+    $("#mobilSysmenue").click(function (e){
+
+        $("#mobilSysAccueil").click();
+        $(this).addClass("active");
+
+
+        return false;
+    });
+
     //JS SERVICES
     $(document).on("click",".appDev",function (e)
     {
@@ -11,9 +21,6 @@ $(document).ready(function (e)
         $("#infoServices").modal({
             keyboard: true,
             show: true});
-
-
-
 
     });
 

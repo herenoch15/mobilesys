@@ -23,6 +23,7 @@ class Realisations extends CI_Controller
 	// PAGE Réalisation PRINCIPALE
 	public function index()
 	{
+        $data=array();
 		$this->layout->set_titre("MobileSys | Nos réalisations");
 
 
@@ -34,7 +35,8 @@ class Realisations extends CI_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("js");
 
-        $this->layout->Entete("Entetepage");
+        $data["menueActive"]="Realisations";
+        $this->layout->Entete("Entetepage",$data);
         $this->layout->Pied("Pied_page");
         $this->layout->view("Realisations/view_realisation");
 

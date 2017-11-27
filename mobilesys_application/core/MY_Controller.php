@@ -78,7 +78,6 @@ class MY_Controller extends  CI_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js_login");
 
-
         $this->layout->view("Administrateur/Login/View_login");
 
     }

@@ -60,6 +60,14 @@ body #ajax-loader
 	font-size: 17px;
 	font-weight: bold
 }
+#Panelmenue
+{
+	padding-left: 0;
+}
+#Panelmenue .navbar-header
+{
+	padding-left: 15px;
+}
 #Panelmenue .navbar-toggle
 {
 	margin-right:auto ;
@@ -97,6 +105,28 @@ body #ajax-loader
 
 	height: 37px;
 	width:37px;
+}
+#Panelmenue #myNavbar ul li a.active,#Panelmenue .navbar-header .active
+{
+	background: #07273D;
+	opacity: 0.7;
+}
+#Panelmenue  #myNavbar ul li,#Panelmenue .navbar-header
+{
+	border-right: 1px solid rgba(0,0,0,.2);
+}
+
+@media (max-width:  768px)
+{
+	#Panelmenue  #myNavbar ul li,#Panelmenue .navbar-header
+	{
+		border:0px;
+	}
+	#Panelmenue .navbar-header .active
+	{
+		background: none;
+		opacity: 1;
+	}
 }
 /************ FIN CSS DEBUT PAGE ************/
 
@@ -270,6 +300,10 @@ margin-top: 20px;
 	/*
 	margin-top: 20px;*/
 }
+#realisationPage #titreRealisation label
+{
+	max-width: 550px;
+}
 #realisationPage #titreRealisation
 {
 	text-align: center;
@@ -309,6 +343,7 @@ margin-top: 20px;
 	height: 100%;
 
 }
+
 /************** Fin CSS Realisation ****************/
 
 
@@ -348,7 +383,7 @@ margin-top: 20px;
 }
 #Pied_page #droite .row
 {
-	margin-left: 6px;
+	margin-left: 0px;
 	margin-right: 0px;
 	background:#152834;
 }
@@ -358,7 +393,7 @@ margin-top: 20px;
 }
 #Pied_page  #panelsaisie_email_reseauxsociaux
 {
-	margin: auto 2px auto 2px;
+	margin: auto 2px auto 0;
 }
 
 #Pied_page #droite #Emailcct
@@ -467,7 +502,7 @@ margin-top: 20px;
 }
 #Pied_page #lien_piedpage .list
 {
-	padding: 0 7px 0 7px;
+	padding: 0 7px 0 0;
 }
 #Pied_page #lien_piedpage .list#horaire
 {

@@ -28,6 +28,7 @@ class Contact extends CI_Controller
 	{
 
         // Load the library
+        $data=array();
         $this->load->library('googlemaps');
         //$this->googlemaps->initialize();
 
@@ -74,7 +75,8 @@ class Contact extends CI_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("js");
 
-        $this->layout->Entete("Entetepage");
+        $data["menueActive"]="Contact";
+        $this->layout->Entete("Entetepage",$data);
         $this->layout->Pied("Pied_page");
         $this->layout->view("Contact/view_contactMap",$data);
 

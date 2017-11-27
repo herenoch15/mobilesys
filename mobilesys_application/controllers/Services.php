@@ -23,7 +23,7 @@ class services extends CI_Controller
 	// PAGE Service PRINCIPALE
 	public function index()
 	{
-
+        $data=array();
 		$this->layout->set_titre("MobileSys | Nos services");
 
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
@@ -34,7 +34,8 @@ class services extends CI_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("js");
 
-        $this->layout->Entete("Entetepage");
+        $data["menueActive"]="Services";
+        $this->layout->Entete("Entetepage",$data);
         $this->layout->Pied("Pied_page");
         $this->layout->view("Services/view_services");
 
