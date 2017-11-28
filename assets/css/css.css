@@ -52,6 +52,7 @@ body #ajax-loader
 	position: relative;
 	margin-bottom:0px;
 	background: none;
+	border-color: transparent;
 }
 #Entete_page #EnteteMenue a
 {
@@ -106,7 +107,8 @@ body #ajax-loader
 	height: 37px;
 	width:37px;
 }
-#Panelmenue #myNavbar ul li a.active,#Panelmenue .navbar-header .active
+#Panelmenue #myNavbar ul li a.active,
+#Panelmenue .navbar-header .active
 {
 	background: #07273D;
 	opacity: 0.7;
@@ -128,6 +130,18 @@ body #ajax-loader
 		opacity: 1;
 	}
 }
+
+@media (min-width:  768px)
+{
+	#Panelmenue .navbar-header .active,
+	#Panelmenue #myNavbar ul li a.active
+	{
+		border-bottom: 2px solid #2BBA88;
+	}
+}
+
+
+
 /************ FIN CSS DEBUT PAGE ************/
 
 

@@ -133,7 +133,7 @@ var ajaxRequest = new (function () {
                 if($(this).attr("menueP"))
                 {
 
-                    $(".ajax-nav,.navbar-brand").removeClass("active");
+                    $(".ajax-nav,.navbar-brand,#mobilSysContact").removeClass("active");
                     $(this).addClass("active");
                 }
 
