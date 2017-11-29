@@ -271,36 +271,6 @@ var ajaxRequest = new (function () {
 })();
 function change_lienMenue(url_)
 {
-
-
-
     if($("#btnBarr").css("display")!="none")
     $("#btnBarr").click();
-    //alert("cc");
-	//url_=oPageInfo.url;
-				//alert(lienMenue_);
-                /*
-				$("#menu ul li a.ajax-nav").css("border-bottom","none");
-				if(url_.search(/artistes/)!=-1)
-				{
-
-					$("#menu ul li a#menu-artiste").css("border-bottom","2px solid #2daadd");
-				}
-				else if(url_.search(/musiques/)!=-1)
-				{
-					$("#menu ul li a#menu-musique").css("border-bottom","2px solid #2daadd");
-				}
-				else if(url_.search(/videos/)!=-1)
-				{
-					$("#menu ul li a#menu-video").css("border-bottom","2px solid #2daadd");
-				}
-				else if(url_.search(/evenement/)!=-1)
-				{
-					$("#menu ul li a#menu-events").css("border-bottom","2px solid #2daadd");
-				}else
-				{
-					$("#menu ul li a#menu-accueil").css("border-bottom","2px solid #2daadd");
-					
-				}
-                */
 }

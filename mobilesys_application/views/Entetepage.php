@@ -29,7 +29,7 @@
 								<li class="visible-xs"><a   id="mobilSysAccueil" menueP="Accueil" href="<?php print (site_url(''));  ?>" class="ajax-nav<?php if($menueActive=="Accueil") { ?> active<?php } ?>" >Accueil</a></li>
 								<li><a   menueP="Services"  href="<?php print (site_url('nos-services'));  ?>" class="ajax-nav<?php if($menueActive=="Services") { ?> active<?php } ?>" >Services</a></li>
 								<li><a   menueP="Realisations"  href="<?php print (site_url('nos-realisations'));  ?>" class="ajax-nav<?php if($menueActive=="Realisations") { ?> active<?php } ?>" >Realisation</a></li>
-								<li><a id="mobilSysContact"  menueP="Contact"  class="<?php if($menueActive=="Contact") { ?> active<?php } ?>" href="<?php print (site_url('contact'));  ?>">Contact</a></li>
+								<li><a id="mobilSysContact"  menueP="Contact"  class="ajax-nav <?php if($menueActive=="Contact") { ?> active<?php } ?>" href="<?php print (site_url('contact'));  ?>">Contact</a></li>
 							</ul>
 						</div>
 					</div>

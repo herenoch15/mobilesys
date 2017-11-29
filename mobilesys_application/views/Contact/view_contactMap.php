@@ -7,7 +7,7 @@
  * Time: 10:11
  */
 
- echo $map['js'];
+ //echo $map['js'];
 ?>
 
 
@@ -30,7 +30,7 @@
                 </div>
                 <div id="carteGeolocalisation" class="row">
                     <div class="col-sm-12">
-                        <?php echo $map['html']; ?>
+                        <?php //echo $map['html']; ?>
                     </div>
                 </div>
 
@@ -67,5 +67,5 @@
     </div>
 
 <?php
-echo $map['js'];
+//echo $map['js'];
 ?>

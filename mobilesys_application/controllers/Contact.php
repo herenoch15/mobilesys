@@ -29,7 +29,7 @@ class Contact extends CI_Controller
 
         // Load the library
         $data=array();
-        $this->load->library('googlemaps');
+     /*   $this->load->library('googlemaps');
         //$this->googlemaps->initialize();
 
 
@@ -58,6 +58,7 @@ class Contact extends CI_Controller
         $this->googlemaps->add_marker($marker);
         $data['map'] = $this->googlemaps->create_map();
 
+*/
 
 
 
