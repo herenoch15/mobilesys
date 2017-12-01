@@ -4,13 +4,10 @@ $(document).ready(function (e)
 {
 
 
-
     $("#mobilSysmenue").click(function (e){
 
         $("#mobilSysAccueil").click();
         $(this).addClass("active");
-
-
         return false;
     });
 
@@ -21,7 +18,6 @@ $(document).ready(function (e)
         $("#infoServices").modal({
             keyboard: true,
             show: true});
-
     });
 
 
@@ -32,10 +28,9 @@ $(document).ready(function (e)
 
 
     //Fonction fermeture fenetre
-    $(".modal .close").click(function (e){
-
+    $(".modal .close").click(function (e)
+    {
         $(".modal").modal("hide");
-
     });
 
 
@@ -43,8 +38,6 @@ $(document).ready(function (e)
 
     $("#btnOK").click(function (e)
     {
-
-
 
         emailval=$("#Emailcct").val();
         $("#panelINFOMsgcontact").css("display","none");
@@ -62,10 +55,8 @@ $(document).ready(function (e)
             }
             else
             {
-
                 $("#Emailcct").attr("placeholder","Saisissez a nouveau votre email");
                 $("#Emailcct").val("");
-
             }
 
         }
@@ -79,12 +70,8 @@ $(document).ready(function (e)
 
 
     //****************** DEBUT BUTTON ENVOYER CONTACT **********************
-    $("#btn_envoyermsg").click(function (e)
+    $(document).on("click", "#btnEnvoyermessage",function (e)
     {
-
-
-
-
         // Test si le nom ou prenom ou email ou message vide
         var nom_=$("#nom_cct_").val();
         var prenom_=$("#prenom_cct_").val();
@@ -94,8 +81,6 @@ $(document).ready(function (e)
 
         if(nom_=="" || prenom_=="" || email_=="" || message_=="")
         {
-
-
                 if(nom_=="")
                 {
                     message_erreur="nom";
@@ -104,7 +89,6 @@ $(document).ready(function (e)
                 {
                     message_erreur != "" ? message_erreur = message_erreur + " ,prenom" : message_erreur = "prenom";
                 }
-
                 if(email_=="")
                 {
                     message_erreur!=""? message_erreur=message_erreur+" ,email" :message_erreur="email" ;
@@ -113,12 +97,8 @@ $(document).ready(function (e)
                 {
                     message_erreur!=""?   message_erreur=message_erreur+" , message" : message_erreur="message" ;
                 }
-
-
             $("#panelINFOMsgcontact").css("display","block");
             $("#INFOMsgcontact").html("Saisissez votre "+message_erreur);
-
-
         }
 
 
