@@ -40,26 +40,26 @@
         </div>
         <div   class="col-xs-12 col-sm-4"  >
             <div id="PanelContactDroite">
-                <form role="form">
+                <form  id="frmcontact" method="post"  action="<?php print(site_url("contact/sendmmessage")); ?>" role="form">
                     <label id="lblLaissermsg">Pour nous laisser <br>un message !</label>
                     <label id="lblchampOblig">*Champs obligatoire</label>
                     <div class="form-group">
-                        <input  placeholder="Nom*" class="form-control" id="nom">
+                        <input  placeholder="Nom*" class="form-control" required="required" id="nom" name="nom">
                     </div>
                     <div class="form-group">
-                        <input  placeholder="Prénom*" class="form-control" id="prenom">
+                        <input  placeholder="Prénom*" class="form-control" required="required" id="prenom" name="prenom">
                     </div>
                     <div class="form-group">
-                        <input  placeholder="Email*" class="form-control" id="email">
+                        <input  type="email" placeholder="Email*" class="form-control" required="required" id="email" name="email">
                     </div>
                     <div class="form-group">
-                        <input  placeholder="Tel*" class="form-control" id="tel">
+                        <input  placeholder="Tel*" class="form-control" id="tel" name="tel">
                     </div>
                     <div class="form-group">
-                    <textarea rows="7"  placeholder="Votre message*" class="form-control" id="message"></textarea>
+                    <textarea rows="7"  placeholder="Votre message*" class="form-control" required="required" id="message" name="message"></textarea>
                     </div>
                     <div class="form-group">
-                        <input  type="button"  class="form-control btn btn-primary" id="btnEnvoyermessage" value="Envoyer">
+                        <input  type="submit"  class="form-control btn btn-primary" id="btnEnvoyermessage" value="Envoyer">
                     </div>
 
                 </form>

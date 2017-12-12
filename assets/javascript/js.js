@@ -1,8 +1,6 @@
 //NOUS CONTACT BTN OK
-
 $(document).ready(function (e)
 {
-
 
     $("#mobilSysmenue").click(function (e){
 
@@ -14,7 +12,6 @@ $(document).ready(function (e)
     //JS SERVICES
     $(document).on("click",".appDev",function (e)
     {
-
         $("#infoServices").modal({
             keyboard: true,
             show: true});
@@ -34,8 +31,6 @@ $(document).ready(function (e)
     });
 
 
-
-
     $("#btnOK").click(function (e)
     {
 
@@ -48,7 +43,6 @@ $(document).ready(function (e)
             if(email_valid==true)
             {
                 $("#Emailcctmessage").val(emailval);
-
                 $("#Msgbox_nouscantacter").modal({
                     keyboard: true,
                     show: true});
@@ -61,7 +55,6 @@ $(document).ready(function (e)
 
         }
 
-
     });
 
 
@@ -69,7 +62,7 @@ $(document).ready(function (e)
 
 
 
-    //****************** DEBUT BUTTON ENVOYER CONTACT **********************
+    //********************* DEBUT BUTTON ENVOYER CONTACT *****************
     $(document).on("click", "#btnEnvoyermessage",function (e)
     {
         // Test si le nom ou prenom ou email ou message vide
@@ -101,12 +94,24 @@ $(document).ready(function (e)
             $("#INFOMsgcontact").html("Saisissez votre "+message_erreur);
         }
 
-
-
-
-
     });
-    //************* FIN BUTTON ENVOYER CONTACT ****************************
+    //*********************** FIN BUTTON ENVOYER CONTACT *******************
+
+
+    //************************* DEBUT JS CONTTACT **************************
+
+    $(document).on("submit","#frmcontact",function(e)
+    {
+        url=$(this).attr("action");
+        datatransfert=$("#frmcontact").serializeArray();
+        $.post(url,datatransfert,function(e)
+        {
+            alert(e);
+            return false;
+        });
+        return false;
+    });
+    //************************* FIN JS CONTTACT ****************************
 
 
 /*
@@ -132,6 +137,5 @@ function Test_adresse_email(email)
     if (p1 > -1 && p2 > -1 && p1 < p2) {
         ok = true ;
     }
-
     return ok ;
 }

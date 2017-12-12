@@ -21,6 +21,14 @@ class Contact extends CI_Controller
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
+     function __construct()
+     {
+            parent::__construct();
+             $this->load->model('msg_contact_model'); 
+           // $this->load->model('Usersadmin_model');   
+
+     }
+
 	 
 
 	 // PAGE CONTACT PRINCIPALE
@@ -89,28 +97,17 @@ class Contact extends CI_Controller
 
     public function mapview()
     {
-
-
           // Load the library
-         $this->layout->ajouter_js("jquery-3.2.1");
+        $this->layout->ajouter_js("jquery-3.2.1");
 
         $data=array();
         $this->load->library('googlemaps');
         //$this->googlemaps->initialize();
 
-
         // Create the map. This will return the Javascript to be included in our pages <head></head> section and the HTML code to be
         // // placed where we want the map to appear.
-
        // $data['map'] = $this->googlemaps->create_map();
 
-
-
-
-
-
-
-       // 107116756400389177503
 
         $config['center'] = '-18.8936,47.5609';
         $config['map_height'] ='410px';
@@ -125,7 +122,20 @@ class Contact extends CI_Controller
         $data['map'] = $this->googlemaps->create_map();
         $this->layout->view("Contact/viewMap",$data);
 
+    }
 
+    public function sendmmessage()
+    {
+
+
+            $options_echappees=array();
+            $options_non_echappees=array();
+
+
+            $options_echappees=$this->input->post();
+    
+            $this->msg_contact_model->create($options_echappees,$options_non_echappees);        
+            print "ENVOYER CCT";
 
     }
       
