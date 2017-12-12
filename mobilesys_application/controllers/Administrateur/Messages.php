@@ -34,7 +34,7 @@ class Messages extends MY_Controller
         $data["active"]="Messages";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/Messages/viewlistMessages");
+        $this->layout->views("Administrateur/Messages/list");
         $this->layout->view("Administrateur/footerAdmin");
     }
 
