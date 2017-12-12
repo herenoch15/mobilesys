@@ -30,6 +30,7 @@
                 </div>
                 <div id="carteGeolocalisation" class="row">
                     <div class="col-sm-12">
+                        <iframe  src="<?php print(site_url("contact/mapview")); ?>"></iframe>
                         <?php //echo $map['html']; ?>
                     </div>
                 </div>
