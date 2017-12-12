@@ -231,6 +231,84 @@ body #ajax-loader
 	text-align: justify;
 }
 
+
+/*************** DEBUT CSS Accueil ******************/
+#accueilPage .panel-separation
+{
+ 	margin-top: 20px;
+}
+
+/*************** DEBUT CSS Accueil ******************/
+#slide-DernierRealisation .item
+{
+	margin-left:5px;
+	margin-right:5px;
+}
+#slide-DernierRealisation .panellist-image
+{
+
+	padding-left: 0px;
+	padding-right: 0px;
+	background: #ccc;
+
+	margin-right: 4px;
+	margin-left: 4px;
+	width: 24%;
+
+}
+/*
+#slide-DernierRealisation .item .row:first-child
+{
+	margin-left:0px;
+}*/
+#slide-DernierRealisation .panellist-image img
+{
+	width: 100%;
+	height: 230px;
+	/*
+	height: 150%;*/
+}
+
+#slide-DernierRealisation .commentaire
+{
+	font-weight: bold;
+	font-size: 14;
+	margin:8px auto 8px 10px ;
+	display: block;
+	color: #152834;
+
+}
+#slide-DernierRealisation .savoir_plus
+{
+
+	color: #fff;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+#myCarousel  .carousel-control
+{
+	width: 8%;
+
+}
+
+#myCarousel  a.carousel-control:hover
+{
+	background-color: rgba(0,0,0,0.4);
+}
+#myCarousel .pagination li
+{
+	border: 1px solid #152834;
+}
+#myCarousel .pagination li.active
+{
+	background: #152834;
+}
+#myCarousel .pagination
+{
+	margin-bottom:-53px;
+}
+
 /*************** DEBUT  CSS Services ****************/
 #servicesPage .listservice .imagesServices img
 {
@@ -306,6 +384,7 @@ margin-top: 20px;
 
 
 /************** CSS Realisation ****************/
+#accueilPage,
 #realisationPage
 {
 	margin-right: 30px;

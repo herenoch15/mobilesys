@@ -19,7 +19,8 @@
 
 
             <div id="titreRealisation">
-                <label>Nous avons la chance de collaborer ensemble sur des projets , soyez notre prochain challenge !</label></div>
+                <label>Nous avons la chance de collaborer ensemble sur des projets , soyez notre prochain challenge !</label>
+            </div>
 
 
             <div class="panel-titreServ row" >
