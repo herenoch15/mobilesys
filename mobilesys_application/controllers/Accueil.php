@@ -30,7 +30,6 @@ class Accueil extends CI_Controller
 	    $data=array();
 		$this->layout->set_titre("MobileSys | Cabinet de conseil en système d&#039;information et maintenance informatique");
 
-
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("css");
 
@@ -45,11 +44,8 @@ class Accueil extends CI_Controller
         $this->layout->views("Accueil/view_introduction");
         $this->layout->views("Accueil/view_derniersrealisations");
         $this->layout->view("Accueil/view_services");
-
-        //$this->layout->view("view_pageaccueil");
        	
 	}
-      //Fin Page d'accueil principale
 
 }
 

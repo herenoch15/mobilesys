@@ -20,7 +20,6 @@ class Users extends MY_Controller
     public function index()
     {
 
-
         $this->layout->set_titre("MobileSys Admin | Messages");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");

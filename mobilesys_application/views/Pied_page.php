@@ -13,7 +13,6 @@
                 </div>
                 <div class="clearfix visible-xs"></div>
                 <div id="gauche" class="col-sm-5 col-xs-12">
-
                     <div class="row">
                         <a id="FB_" target="_blank" href="https://facebook.com/cmcas1mizarailayfitia/?ref=ts&fref=ts" class="col-sm-3 col-xs-3 reseaux_sociaux"></a><a id="twitter_" class="col-sm-3 col-xs-3 reseaux_sociaux"></a> <a id="gplus_" href="https://plus.google.com/107116756400389177503?hl=fr" target="_blank" class="col-sm-3 col-xs-3 reseaux_sociaux"></a> <a id="youtube_" class="col-sm-3 col-xs-3 reseaux_sociaux"></a>
                     </div>
@@ -77,7 +76,6 @@
 
                 <div id="gauche" class="offre col-sm-5 col-xs-12">
                     <div class="list col-sm-12">
-
                         <label class="lbltitre_">Nos services</label>
                         <div class="panel_">
                             <ul>
@@ -86,7 +84,6 @@
                                 <li><a href="">Systèmes et réseaux</a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
@@ -105,15 +102,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 
 
 <div class="modal fade" id="Msgbox_nouscantacter" >
@@ -144,8 +132,6 @@
                         <div class="col-sm-12 form-group"><label id="INFOMsgcontact"></label></div>
                     </div>
 
-
-
                 </div>
                 <div class="modal-footer panelfooter_" >
                     <input id="btn_envoyermsg" type="button" class="btn btn-md btn-primary"   value="Envoyer">
@@ -158,40 +144,34 @@
     </form>
 </div>
 
-
-
 <div class="modal fade" id="Info_mobileSys" >
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" datadismiss="modal">x</button>
-                    <h4 class="modal-title">Concat MobileSys</h4>
-                </div>
-                <div class="modal-body">
-                Votre message été envoyé avec succèe
-                </div>
-                <div class="modal-footer panelfooter_" >
-                    <input id="btn_ok" type="button" class="btn btn-md btn-primary"   value="OK">
-                </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" datadismiss="modal">x</button>
+                <h4 class="modal-title">Concat MobileSys</h4>
+            </div>
+            <div class="modal-body">
+            Votre message été envoyé avec succèe
+            </div>
+            <div class="modal-footer panelfooter_" >
+                <input id="btn_ok" type="button" class="btn btn-md btn-primary"   value="OK">
             </div>
         </div>
+    </div>
 </div>
 
 
-
-
-
-
-
 <div class="modal" id="infoServices">
-        <div class="modal-dialog"> <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-
-                            dismiss="modal">x</button>
-                    <h4 class="modal-title">HTML5</h4>
-                </div>
-                <div class="modal-body">
-                    HTML est le langage de balisage du web. La version 5 est de loin la plus complète. Peu importe l’envergure de l’architecture d’un site, HTML 5 est efficace. De plus avec ses nouveaux éléments et attributs, on peut développer des sites dynamiques et géolocalisés.
-                </div>
-            </div> </div>
+    <div class="modal-dialog"> <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-
+                        dismiss="modal">x</button>
+                <h4 class="modal-title">HTML5</h4>
+            </div>
+            <div class="modal-body">
+                HTML est le langage de balisage du web. La version 5 est de loin la plus complète. Peu importe l’envergure de l’architecture d’un site, HTML 5 est efficace. De plus avec ses nouveaux éléments et attributs, on peut développer des sites dynamiques et géolocalisés.
+            </div>
+    </div> 
+</div>
 </div>

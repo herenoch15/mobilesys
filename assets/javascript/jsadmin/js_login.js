@@ -3,18 +3,10 @@
  */
 $(document).ready(function (e)
 {
-
-
-
         $(".modal .close").click(function (e)
         {
             $(".modal").modal("hide");
         });
-
-
-
-
-
 
         $("#btnLogin").click(function (e)
         {
@@ -37,10 +29,7 @@ $(document).ready(function (e)
                         window.location.href="";
                  });
 
-
-
              }
             return false;
-
         });
 })

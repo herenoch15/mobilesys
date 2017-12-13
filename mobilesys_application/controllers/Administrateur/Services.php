@@ -26,14 +26,12 @@ class Services extends MY_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js");
 
-
         $data=array();
         $data["active"]="Services";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/Services/list");
         $this->layout->view("Administrateur/footerAdmin");
-
     }
 }
 ?>

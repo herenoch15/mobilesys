@@ -28,7 +28,6 @@ class Realisations extends MY_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js");
 
-
         $data=array();
         $data["active"]="Realisations";
 

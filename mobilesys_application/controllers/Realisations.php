@@ -26,7 +26,6 @@ class Realisations extends CI_Controller
         $data=array();
 		$this->layout->set_titre("MobileSys | Nos réalisations");
 
-
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("css");
 
@@ -39,7 +38,5 @@ class Realisations extends CI_Controller
         $this->layout->Entete("Entetepage",$data);
         $this->layout->Pied("Pied_page");
         $this->layout->view("Realisations/view_realisation");
-
-
 	}
 }

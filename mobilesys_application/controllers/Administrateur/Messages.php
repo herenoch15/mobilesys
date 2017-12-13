@@ -15,12 +15,9 @@ class Messages extends MY_Controller
         parent::__construct();
         $validLogin=$this->testLogin();
         $this->testLoginAdmin();
-
     }
     public function index()
     {
-
-
         $this->layout->set_titre("MobileSys Admin | Messages");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");

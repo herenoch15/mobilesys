@@ -37,8 +37,6 @@ class services extends CI_Controller
         $data["menueActive"]="Services";
         $this->layout->Entete("Entetepage",$data);
         $this->layout->Pied("Pied_page");
-        $this->layout->view("Services/view_services");
-
-       	
+        $this->layout->view("Services/view_services");	
 	}
 }

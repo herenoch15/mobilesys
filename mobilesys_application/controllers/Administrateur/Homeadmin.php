@@ -11,10 +11,10 @@ class Homeadmin extends MY_Controller
     public function index()
     {
 
-        if($this->testLogin()==true)
-            $this->_Principale();
-        else
-            $this->loginAdmin();
+      if($this->testLogin()==true)
+          $this->_Principale();
+      else
+          $this->loginAdmin();
 
     }
 
@@ -41,9 +41,9 @@ class Homeadmin extends MY_Controller
 
     public function logout()
     {
-            // Détruit la session
-            $this->session->sess_destroy();
-            redirect('/Administrateur/');
+      // Détruit la session
+      $this->session->sess_destroy();
+      redirect('/Administrateur/');
     }
 
 
