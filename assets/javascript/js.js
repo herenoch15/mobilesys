@@ -106,7 +106,11 @@ $(document).ready(function (e)
         datatransfert=$("#frmcontact").serializeArray();
         $.post(url,datatransfert,function(e)
         {
-            alert(e);
+            //alert(e);
+            
+             $("#Info_mobileSys").modal({
+                    keyboard: true,
+                    show: true});
             return false;
         });
         return false;

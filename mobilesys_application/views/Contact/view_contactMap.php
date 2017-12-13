@@ -53,7 +53,7 @@
                         <input  type="email" placeholder="Email*" class="form-control" required="required" id="email" name="email">
                     </div>
                     <div class="form-group">
-                        <input  placeholder="Tel*" class="form-control" id="tel" name="tel">
+                        <input type="tel"  placeholder="Tel*" class="form-control" id="tel" name="tel">
                     </div>
                     <div class="form-group">
                     <textarea rows="7"  placeholder="Votre message*" class="form-control" required="required" id="message" name="message"></textarea>

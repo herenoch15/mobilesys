@@ -160,9 +160,30 @@
 
 
 
+<div class="modal fade" id="Info_mobileSys" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" datadismiss="modal">x</button>
+                    <h4 class="modal-title">Concat MobileSys</h4>
+                </div>
+                <div class="modal-body">
+                Votre message été envoyé avec succèe
+                </div>
+                <div class="modal-footer panelfooter_" >
+                    <input id="btn_ok" type="button" class="btn btn-md btn-primary"   value="OK">
+                </div>
+            </div>
+        </div>
+</div>
 
 
-    <div class="modal" id="infoServices">
+
+
+
+
+
+<div class="modal" id="infoServices">
         <div class="modal-dialog"> <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-
@@ -173,4 +194,4 @@
                     HTML est le langage de balisage du web. La version 5 est de loin la plus complète. Peu importe l’envergure de l’architecture d’un site, HTML 5 est efficace. De plus avec ses nouveaux éléments et attributs, on peut développer des sites dynamiques et géolocalisés.
                 </div>
             </div> </div>
-    </div>
+</div>

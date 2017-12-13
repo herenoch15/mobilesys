@@ -668,7 +668,8 @@ margin-top: 20px;
 	}
 }
 
-#Msgbox_nouscantacter .modal-content
+#Msgbox_nouscantacter .modal-content,
+#Info_mobileSys .modal-content
 {
 	background:#152834;
 }
@@ -676,7 +677,12 @@ margin-top: 20px;
 {
 	display: none;
 }
-#Msgbox_nouscantacter .modal-title
+#Msgbox_nouscantacter .modal-title,
+#Info_mobileSys .modal-title
+{
+	color: #fff;
+}
+#Info_mobileSys .modal-body
 {
 	color: #fff;
 }
