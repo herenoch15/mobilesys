@@ -6,8 +6,6 @@
  * Date: 03/11/2017
  * Time: 10:11
  */
-
- //echo $map['js'];
 ?>
 
 
@@ -17,7 +15,7 @@
         </div>
     </div>
     <div id="PanelPAge" class="row">
-        <div  class="col-xs-12 col-sm-8"  >
+        <div  class="conteneurContact col-xs-12 col-sm-8"  >
             <div id="PanelContactGauche">
                 <div id="Adresse" class="row">
                     <div class="col-sm-12">
@@ -31,14 +29,13 @@
                 <div id="carteGeolocalisation" class="row">
                     <div class="col-sm-12">
                         <iframe  src="<?php print(site_url("contact/mapview")); ?>"></iframe>
-                        <?php //echo $map['html']; ?>
                     </div>
                 </div>
 
             </div>
 
         </div>
-        <div   class="col-xs-12 col-sm-4"  >
+        <div   class="conteneurContact col-xs-12 col-sm-4"  >
             <div id="PanelContactDroite">
                 <form  id="frmcontact" method="post"  action="<?php print(site_url("contact/sendmmessage")); ?>" role="form">
                     <label id="lblLaissermsg">Pour nous laisser <br>un message !</label>
@@ -66,7 +63,3 @@
             </div>
         </div>
     </div>
-
-<?php
-//echo $map['js'];
-?>

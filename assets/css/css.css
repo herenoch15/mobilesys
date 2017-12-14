@@ -34,8 +34,6 @@ body #ajax-loader
 	margin: auto auto auto auto;
 	overflow-y: auto;
 }
-
-
 /************ DEBUT CSS DEBUT PAGE ************/
 
 #Entete_page
@@ -783,11 +781,23 @@ margin-top: 20px;
 #carteGeolocalisation iframe
 {
 	width: 100%;
-	/*height:100%;*/
 	border: 0px;
 	height: 500px;
 	min-height: 200px
 
+}
+
+
+
+
+@media (max-width:  1042px)
+{
+	#PanelPAge .conteneurContact
+	{
+		clear: both;
+		width:100%;
+
+	}
 }
 
 /****************** FIN CSS contact **********************/

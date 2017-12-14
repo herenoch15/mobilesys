@@ -112,7 +112,7 @@ class Contact extends CI_Controller
         $config['center'] = '-18.8936,47.5609';
         $config['map_height'] ='410px';
         $config['zoom'] = '17';
-        $config['apiKey'] = 'AIzaSyBpjw1JDoC0SmbXD6OR7ocy9AgiyJcXIy4';
+        $config['apiKey'] = 'AIzaSyB8df0j523DwrYKshz6ZolvO6MRW9KBfSg';
 
         $this->googlemaps->initialize($config);
 
@@ -127,15 +127,13 @@ class Contact extends CI_Controller
     public function sendmmessage()
     {
 
+        $options_echappees=array();
+        $options_non_echappees=array();
 
-            $options_echappees=array();
-            $options_non_echappees=array();
+        $options_echappees=$this->input->post();
 
-
-            $options_echappees=$this->input->post();
-    
-            $this->msg_contact_model->create($options_echappees,$options_non_echappees);        
-            print "ENVOYER CCT";
+        $this->msg_contact_model->create($options_echappees,$options_non_echappees);        
+        print "ENVOYER CCT";
 
     }
       
