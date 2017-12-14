@@ -18,19 +18,11 @@ $(document).ready(function (e)
     });
 
 
-
-
-
-
-
-
     //Fonction fermeture fenetre
     $(".modal .close").click(function (e)
     {
         $(".modal").modal("hide");
     });
-
-
     $("#btnOK").click(function (e)
     {
 
@@ -99,7 +91,6 @@ $(document).ready(function (e)
 
 
     //************************* DEBUT JS CONTTACT **************************
-
     $(document).on("submit","#frmcontact",function(e)
     {
         url=$(this).attr("action");
@@ -126,11 +117,6 @@ $(document).ready(function (e)
 */
 
 });
-
-
-
-
-
 
 //FUNCTION TESTE ADRESSE EMAIL VALIDE OU PAS
 function Test_adresse_email(email)
