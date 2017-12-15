@@ -143,6 +143,17 @@ body #ajax-loader
 		background: none;
 		opacity: 1;
 	}
+	#mobilSysmenue, #Panelmenue #myNavbar ul li a
+	{
+		background: none;
+	}
+	/*
+
+	#Panelmenue  #myNavbar ul li,#Panelmenue .navbar-header
+	{
+
+		}*/
+
 }
 
 @media (min-width:  768px)
@@ -247,7 +258,7 @@ body #ajax-loader
 /*************** DEBUT CSS Accueil ******************/
 #panelslideServiceccueil
 {
-
+	display: none;
 }
 #slideServicepageAccueil .item
 {
@@ -484,7 +495,8 @@ margin-top: 20px;
 }
 #Pied_page #lien_piedpage
 {
-	margin: 20px auto 5px auto;
+	/*margin: 20px auto 5px auto;*/
+	margin:20px 8px 5px 5px;
 }
 
 #Pied_page #droite,#Pied_page #gauche
@@ -615,7 +627,18 @@ margin-top: 20px;
 	background: #2BBA88;
 	border-radius: 4px;
 	padding: 5px 0 3px 6px;
+	-webkit-transform: skew(-19deg);
+	-moz-transform: skew(-19deg);
+	-o-transform: skew(-19deg);
 }
+#Pied_page #lien_piedpage .list .lbltitre_ .paneltitrelbl
+{
+	-webkit-transform: skew(19deg);
+	-moz-transform: skew(19deg);
+	-o-transform: skew(19deg);
+}
+
+
 #Pied_page #lien_piedpage #droite
 {
 	background: none;

@@ -24,7 +24,7 @@
                 <div id="droite" class="col-sm-7 col-xs-12">
                     <div id="horaire"  class="list col-sm-6">
 
-                        <label class="lbltitre_">Horaires</label>
+                        <label class="lbltitre_"><div class="paneltitrelbl">Horaires</div></label>
                         <div class="panel_">
 
                             <ul id="srvhoraire">
@@ -49,7 +49,7 @@
 
                     <div id="contacte_"  class="list col-sm-6">
 
-                        <label class="lbltitre_">Contacts</label>
+                        <label class="lbltitre_"><div class="paneltitrelbl">Contacts</div></label>
                         <div  class="panel_">
                             <ul id="contacts_">
                                 <li>
@@ -76,7 +76,7 @@
 
                 <div id="gauche" class="offre col-sm-5 col-xs-12">
                     <div class="list col-sm-12">
-                        <label class="lbltitre_">Nos services</label>
+                        <label class="lbltitre_"><div class="paneltitrelbl">Nos services</div></label>
                         <div class="panel_">
                             <ul>
                                 <li><a href="">Développement Web</a></li>

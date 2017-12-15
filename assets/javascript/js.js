@@ -2,6 +2,16 @@
 $(document).ready(function (e)
 {
 
+
+ 
+    if($("#myNavbar a.active").attr("menuep")=="Accueil")
+    {
+        $("#panelslideServiceccueil").css("display","block");
+    }
+
+
+
+
     $("#mobilSysmenue").click(function (e){
 
         $("#mobilSysAccueil").click();
