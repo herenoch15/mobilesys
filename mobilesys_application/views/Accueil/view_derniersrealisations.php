@@ -6,19 +6,6 @@
  * Time: 05:55
  */
 ?>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <div id="PanelPAge" class="row">
     <div id="accueilPage" >
 

@@ -119,40 +119,30 @@ var ajaxRequest = new (function () {
     function processLink ()
 	{
 
-
-
-
-
-
         	 if (this.className === sAjaxClass)
 			{
-
-
-
-
                 if($(this).attr("menueP"))
                 {
-
                     $(".ajax-nav,.navbar-brand,#mobilSysContact").removeClass("active");
                     $(this).addClass("active");
                 }
-
+                if(this.id=="mobilSysAccueil")
+                    $("#panelslideServiceccueil").css("display","block");
+                    else
+                    $("#panelslideServiceccueil").css("display","none");
 				//rechecher les lien et associer à la menue qui est vient de clicker
-				
-
-				
 				//var resultat = assertion.search(/Antoine.+/);
- //if(resultat != -1)
-  //alert("trouvé!");
+                //if(resultat != -1)
+                //alert("trouvé!");
 			
-			/*if($(this).attr("id")=="menu-accueil" || $(this).attr("id")=="menu-artiste" || $(this).attr("id")=="menu-musique" || $(this).attr("id")=="menu-video" || $(this).attr("id")=="menu-events")
-			{
-					$("#menu ul li a.ajax-nav").css("border-bottom","none");
-					$(this).css("border-bottom","2px solid #2daadd");
-			
-			}*/
-			//$(this).parentsUntil("#menu","div").css("color","#4eafcf");
-			//$(this).css("color","#4eafcf");
+    			/*if($(this).attr("id")=="menu-accueil" || $(this).attr("id")=="menu-artiste" || $(this).attr("id")=="menu-musique" || $(this).attr("id")=="menu-video" || $(this).attr("id")=="menu-events")
+    			{
+    					$("#menu ul li a.ajax-nav").css("border-bottom","none");
+    					$(this).css("border-bottom","2px solid #2daadd");
+    			
+    			}*/
+    			//$(this).parentsUntil("#menu","div").css("color","#4eafcf");
+    			//$(this).css("color","#4eafcf");
             requestPage(this.href);
             return false;
         }

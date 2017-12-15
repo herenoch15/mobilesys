@@ -57,7 +57,8 @@ body #ajax-loader
 	color:#ccc;
 	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
 	font-size: 17px;
-	font-weight: bold
+	font-weight: bold;
+	color: #fff;
 }
 #Panelmenue
 {
@@ -113,6 +114,22 @@ body #ajax-loader
 #Panelmenue  #myNavbar ul li,#Panelmenue .navbar-header
 {
 	border-right: 1px solid rgba(0,0,0,.2);
+	-webkit-transform: skew(-19deg);
+	-moz-transform: skew(-19deg);
+	-o-transform: skew(-19deg);
+
+}
+
+#mobilSysmenue #textMobilesys,#Panelmenue  #myNavbar ul li a .labelmenue
+{
+	-webkit-transform: skew(19deg);
+	-moz-transform: skew(10deg);
+	-o-transform: skew(19deg);
+
+}
+#mobilSysmenue,#Panelmenue  #myNavbar ul li a
+{
+	background: rgb(0,159,227);
 }
 
 @media (max-width:  768px)
@@ -228,11 +245,41 @@ body #ajax-loader
 
 
 /*************** DEBUT CSS Accueil ******************/
+#panelslideServiceccueil
+{
+
+}
+#slideServicepageAccueil .item
+{
+	height: 100%;
+}
+#slideServicepageAccueil .item .row
+{
+	height: 100%
+}
+#slideServicepageAccueil .item .slide-listPanelimg
+{
+	height: 100%;
+	-webkit-transform: skew(-19deg);
+	-moz-transform: skew(-19deg);
+	-o-transform: skew(-19deg);
+	margin-left: 0;
+	margin-right: 0
+	/*
+	-webkit-transform: skew(-25deg);
+	-moz-transform: skew(-25deg);
+	-o-transform: skew(-25deg);*/
+
+}
+#slideServicepageAccueil
+{
+	background: blue;
+	height: 274px;
+}
 #accueilPage .panel-separation
 {
  	margin-top: 20px;
 }
-
 /*************** DEBUT CSS Accueil ******************/
 #slide-DernierRealisation .item
 {

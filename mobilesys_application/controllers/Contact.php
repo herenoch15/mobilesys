@@ -97,9 +97,14 @@ class Contact extends CI_Controller
 
     public function mapview()
     {
-          // Load the library
-        $this->layout->ajouter_js("jquery-3.2.1");
 
+        
+       // $this->load->theme('_default');
+
+          // Load the library
+        
+        $this->layout->ajouter_css("ccs_map");
+        $this->layout->ajouter_js("jquery-3.2.1");
         $data=array();
         $this->load->library('googlemaps');
         //$this->googlemaps->initialize();
