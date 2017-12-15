@@ -182,6 +182,10 @@ class Layout
 		return true;
 		}return false;
 	}
+	public function changeTheme($theme)
+	{
+		$this->theme=$theme;
+	}
 	
 }
 ?>

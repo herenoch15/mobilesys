@@ -14,13 +14,10 @@ class MY_Controller extends  CI_Controller
 
     function __construct()
     {
-
-
         parent::__construct();
         $this->load->model('Users_model');
-
-
-
+        //Chargement theme admin
+        $this->layout->changeTheme("admintheme"); 
     }
 
     //Test login
@@ -31,7 +28,6 @@ class MY_Controller extends  CI_Controller
         $this->passwordAdmin=@$this->session->userdata("passwordAdmin");
         if($this->loginAdmin!="" && $this->passwordAdmin!="")
         {
-
             return true;
         }
         else if(@$this->input->post('login')!="" &&  @$this->input->post('password')!="")
@@ -57,7 +53,6 @@ class MY_Controller extends  CI_Controller
             }
 
         }
-
         return false;
 
 

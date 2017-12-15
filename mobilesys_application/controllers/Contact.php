@@ -99,11 +99,9 @@ class Contact extends CI_Controller
     {
 
         
-       // $this->load->theme('_default');
-
-          // Load the library
+        $this->layout->changeTheme("_default");
         
-        $this->layout->ajouter_css("ccs_map");
+
         $this->layout->ajouter_js("jquery-3.2.1");
         $data=array();
         $this->load->library('googlemaps');

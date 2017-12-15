@@ -7,6 +7,7 @@ class Homeadmin extends MY_Controller
     {
         parent::__construct();
 
+
     }
     public function index()
     {
@@ -20,6 +21,12 @@ class Homeadmin extends MY_Controller
 
    public function _Principale()
    {
+
+       //var_dump("ccc");exit();
+       //var_dump($this->layout->set_theme("admintheme"));
+       //exit();
+
+      // $this->layout->theme="admintheme";
 
        $this->layout->set_titre("MobileSys Admin | Accueil");
        $this->layout->ajouter_css("bootstrap/css/bootstrap");
