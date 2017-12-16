@@ -636,6 +636,7 @@ margin-top: 20px;
 	-webkit-transform: skew(19deg);
 	-moz-transform: skew(19deg);
 	-o-transform: skew(19deg);
+	padding-left: 10px;
 }
 
 
@@ -669,22 +670,33 @@ margin-top: 20px;
 	color: #ccc;
 }
 
+
 @media (max-width:  768px) {
 
-	#Pied_page #lien_piedpage .list {
+	#Pied_page #lien_piedpage
+	{
+    	margin: 20px 6.5px 20px 6.5px!important;
+	}
+
+	#Pied_page #lien_piedpage .list 
+	{
 		padding: 0 0 0 0;
 	}
-	#Pied_page #lien_piedpage {
+	#Pied_page #lien_piedpage 
+	{
 		margin: 20px auto 20px auto;
 	}
-	#Pied_page #copyright {
+	#Pied_page #copyright
+	{
 		margin: auto 20px auto 0;
 	}
-	#Pied_page #droite {
+	#Pied_page #droite 
+	{
 		background: #152834;
 		padding: 0 0 0 0;
 	}
-	#Pied_page #panelINFOMsgcontact {
+	#Pied_page #panelINFOMsgcontact 
+	{
 
 		display: none;
 	}
