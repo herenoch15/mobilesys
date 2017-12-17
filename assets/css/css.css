@@ -147,13 +147,10 @@ body #ajax-loader
 	{
 		background: none;
 	}
-	/*
-
-	#Panelmenue  #myNavbar ul li,#Panelmenue .navbar-header
+	#myNavbar .navbar-nav
 	{
-
-		}*/
-
+		margin: 9px 0 9px 0;
+	}
 }
 
 @media (min-width:  768px)
@@ -168,9 +165,6 @@ body #ajax-loader
 
 
 /************ FIN CSS DEBUT PAGE ************/
-
-
-
 /* CSS BODY PAGE*/
 #BodyPanel
 {
@@ -193,9 +187,7 @@ body #ajax-loader
 #body_pageCenter
 {
 	 padding: 50px 10px 25px 10px ;
-
 }
-
 #body_pageCenter  #Paneltitre #TitrePAge
 {
 	font-size: 35px;
@@ -420,8 +412,6 @@ margin-top: 20px;
 
 
 
-
-
 /************** CSS Realisation ****************/
 #accueilPage,
 #realisationPage
@@ -461,7 +451,6 @@ margin-top: 20px;
 	border: 3px solid #f6f6f6;
 	border-radius:5px;
 	cursor: pointer;
-
 }
 #realisationPage .realisation-list .panel:hover
 {
@@ -495,7 +484,6 @@ margin-top: 20px;
 }
 #Pied_page #lien_piedpage
 {
-	/*margin: 20px auto 5px auto;*/
 	margin:20px 8px 5px 5px;
 }
 
@@ -548,7 +536,6 @@ margin-top: 20px;
 #Pied_page #droite #btnOK
 {
 	height: 50px;
-	/*width: 50px;*/
 	width: 100%;
 	border-radius: 0px;
 	background: #1c3646;
@@ -697,7 +684,6 @@ margin-top: 20px;
 	}
 	#Pied_page #panelINFOMsgcontact 
 	{
-
 		display: none;
 	}
 }
@@ -722,7 +708,6 @@ margin-top: 20px;
 }
 .modal-backdrop.fade.in
 {
-
 	background: #326295;
 	opacity: 0.5;
 }
@@ -758,7 +743,6 @@ margin-top: 20px;
 	{
 		display:none;
 	}
-
 }
 
 
@@ -828,5 +812,4 @@ margin-top: 20px;
 		width:100%;
 	}
 }
-
 /****************** FIN CSS contact **********************/
