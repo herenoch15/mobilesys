@@ -20,7 +20,7 @@ class Realisations extends MY_Controller
     public function index()
     {
 
-        $this->layout->set_titre("MobileSys Admin | Messages");
+        $this->layout->set_titre("MobileSys Admin | Realisations");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
 
@@ -33,6 +33,24 @@ class Realisations extends MY_Controller
 
         $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/Realisation/list");
+        $this->layout->view("Administrateur/footerAdmin");
+    }
+    public function  create()
+    {
+
+        $this->layout->set_titre("MobileSys Admin | Realisations");
+        $this->layout->ajouter_css("bootstrap/css/bootstrap");
+        $this->layout->ajouter_css("cssadmin/css");
+
+        $this->layout->ajouter_js("jquery-3.2.1");
+        $this->layout->ajouter_js("bootstrap.min");
+        $this->layout->ajouter_js("jsadmin/js");
+
+        $data=array();
+        $data["active"]="Realisations";
+
+        $this->layout->views("Administrateur/headerAdmin",$data);
+        $this->layout->views("Administrateur/Realisation/create");
         $this->layout->view("Administrateur/footerAdmin");
     }
 }
