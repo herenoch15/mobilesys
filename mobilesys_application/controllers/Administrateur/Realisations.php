@@ -38,6 +38,9 @@ class Realisations extends MY_Controller
     public function  create()
     {
 
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
         $this->layout->set_titre("MobileSys Admin | Realisations");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");

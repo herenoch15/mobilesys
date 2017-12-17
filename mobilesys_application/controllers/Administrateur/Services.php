@@ -64,9 +64,6 @@ class Services extends MY_Controller
         }
 
 
-
-
-
         $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/services/create");
         $this->layout->view("Administrateur/footerAdmin");
