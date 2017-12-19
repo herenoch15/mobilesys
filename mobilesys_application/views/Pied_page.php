@@ -79,9 +79,9 @@
                         <label class="lbltitre_"><div class="paneltitrelbl">Nos services</div></label>
                         <div class="panel_">
                             <ul>
-                                <li><a href="">Développement Web</a></li>
-                                <li><a href="">Applications mobiles</a></li>
-                                <li><a href="">Systèmes et réseaux</a></li>
+                                <li><a href="<?php print(site_url("/nos-services")); ?>">Développement Web</a></li>
+                                <li><a href="<?php print(site_url("/nos-services#app_mobile")); ?>">Applications mobiles</a></li>
+                                <li><a href="<?php print(site_url("/nos-services")); ?>">Systèmes et réseaux</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,15 +89,9 @@
 
             </div>
 
-
-
             <div id="copyright" class="row" >
                 <div class="col-sm-12">© Copyright© 2017 MobileSys. Tous droits réservé </div>
             </div>
-
-            <?php
-              /* <div id="toTop"><img src="<?php print(site_url("/assets/images/totop.png"));  ?>"></div>*/
-            ?>
 
 
         </div>

@@ -30,16 +30,16 @@
         <div class="col-md-6 col-md-offset-3">
             <h1>Nouveau service</h1>
             <?php
-            $attributes = array('class' => 'form-horizontal', 'id' => 'form_create');
+            $attributes = array('class' => 'form-horizontal', 'id' => 'form_create', 'role'=>'form');
             echo form_open('/Administrateur/services/create',$attributes);?>
             <div class="form-group">
                 <?php
-                echo form_label('Nom service','nom_services',array('class'=>"col-md-3"));
+                echo form_label('Nom service','nom_service',array('class'=>"col-md-3"));
                 ?>
                 <div class="col-md-9">
                     <?php
-                    echo form_error('nom_services');
-                    echo form_input('nom_services',set_value('nom_services'),'class="form-control"');
+                    echo form_error('nom_service');
+                    echo form_input('nom_service',set_value('nom_service'),'class="form-control"');
                     ?>
                 </div>
             </div>
@@ -67,8 +67,8 @@
             </div>
 
 
-            <?php echo form_submit('submit', 'Enregistrer', 'class="btn btn-primary btn-lg"');?>
-            <?php echo form_reset('reset', 'Anuller','class="btn btn-default btn-lg"');?>
+            <?php echo form_submit('', 'Enregistrer', 'class="btn btn-primary btn-lg"');?>
+            <?php echo form_reset('', 'Anuller','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
         </div>
     </div>

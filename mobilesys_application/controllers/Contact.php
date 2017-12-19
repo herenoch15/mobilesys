@@ -24,9 +24,7 @@ class Contact extends CI_Controller
      function __construct()
      {
             parent::__construct();
-             $this->load->model('msg_contact_model'); 
-           // $this->load->model('Usersadmin_model');   
-
+             $this->load->model('msg_contact_model');
      }
 
 	 

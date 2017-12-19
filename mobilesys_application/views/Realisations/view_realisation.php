@@ -6,6 +6,9 @@
  * Time: 10:11
  */
 ?>
+
+       
+
 <div class="row" id="Paneltitre">
     <div  class="col-xs-12" >
         <label id="TitrePAge">REALISATION</label>
@@ -72,11 +75,12 @@
 
         <br>
         <br>
-        <div class="panel-titreServ row">
+        <div  class="panel-titreServ row">
             <div class="col-sm-12">
                 <div class="sousTitrepage">Application  mobile</div><div class="lineTitrepage">&nbsp;</div>
             </div>
         </div>
+
 
 
         <div class="row">
