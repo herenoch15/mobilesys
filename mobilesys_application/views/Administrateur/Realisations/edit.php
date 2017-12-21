@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <div class="row">
     <div class="col-sm-12">
-        <div>Nouveau réalisations</div>
+        <div>Edition réalisations</div>
     </div>
 </div>
 
@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <h1>Nouveau Réalisation</h1>
+            <h1>Edition Réalisation</h1>
             <?php
             $attributes = array('class' => 'form-horizontal', 'id' => 'form_create', 'role'=>'form');
             echo form_open('/Administrateur/realisations/create',$attributes);?>
@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-9">
                     <?php
                     echo form_error('titre');
-                    echo form_input('titre',set_value('titre'),'class="form-control"');
+                    echo form_input('titre',$realisation->titre,'class="form-control"');
                     ?>
                 </div>
             </div>
@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-9">
                     <?php
                     echo form_error('description');
-                    echo form_textarea('description',set_value('description'),'class="form-control"');
+                    echo form_textarea('description',$realisation->description,'class="form-control"');
                     ?>
                 </div>
             </div>

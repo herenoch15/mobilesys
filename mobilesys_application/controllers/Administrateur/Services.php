@@ -91,7 +91,7 @@ class Services extends MY_Controller
     /**
      * Edit  services
      */
-    public function edit($user_id)
+    public function edit($id)
     {
         $this->load->helper('form');
         $this->load->library('form_validation');
@@ -126,7 +126,7 @@ class Services extends MY_Controller
             $data["success"]="";
             $data["alert"]="";
 
-            $service = $this->services_model->read('*',array('idService'=>$user_id));
+            $service = $this->services_model->read('*',array('idService'=>$id));
             $data["service"]=$service[0];
 
         }

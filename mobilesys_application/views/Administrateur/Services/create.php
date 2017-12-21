@@ -56,7 +56,7 @@
             </div>
             <div class="form-group">
                 <?php
-                echo form_label('photo','logo_service',array('class'=>"col-md-3"));
+                echo form_label('Photo','logo_service',array('class'=>"col-md-3"));
                 ?>
                 <div class="col-md-9">
                     <?php
