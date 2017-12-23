@@ -15,6 +15,8 @@ class Realisations extends MY_Controller
         $validLogin = $this->testLogin();
         $this->testLoginAdmin();
         $this->load->model('realisations_model');
+        $this->load->model('services_model');
+
 
     }
 
@@ -31,9 +33,7 @@ class Realisations extends MY_Controller
 
         $data=array();
         $data["active"]="Realisations";
-        $data["realisations"] = $this->realisations_model->read();
-
-
+        $data["realisations"] = $this->realisations_model->selectRealisationSvc();
 
         $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/Realisations/list");
@@ -57,7 +57,10 @@ class Realisations extends MY_Controller
         $this->layout->ajouter_js("jsadmin/js");
 
         $data=array();
+        $services=$this->services_model->read();
         $data["active"]="Realisations";
+         $data["services"]=$services;
+
         if($this->form_validation->run())
         {
             //Si valide

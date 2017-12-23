@@ -35,7 +35,7 @@
             </div>
 
         </div>
-        <div   class="conteneurContact col-xs-12 col-sm-4"  >
+        <div  id="Droite"  class="conteneurContact col-xs-12 col-sm-4"  >
             <div id="PanelContactDroite">
                 <form  id="frmcontact" method="post"  action="<?php print(site_url("contact/sendmmessage")); ?>" role="form">
                     <label id="lblLaissermsg">Pour nous laisser <br>un message !</label>

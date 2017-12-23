@@ -117,9 +117,7 @@ class Services extends MY_Controller
             $options_echappees=array();
             $options_non_echappees=array();
             $options_echappees=$this->input->post();
-
             $this->services_model->create($options_echappees,$options_non_echappees);
-
         }
         else
         {

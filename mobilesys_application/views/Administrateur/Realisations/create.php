@@ -6,6 +6,7 @@
  * Time: 06:43
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 ?>
 <div class="row">
     <div class="col-sm-12">
@@ -47,6 +48,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     echo form_error('description');
                     echo form_textarea('description',set_value('description'),'class="form-control"');
                     ?>
+                </div>
+            </div>
+             <div class="form-group">
+                <?php
+                echo form_label('Service','Service',array('class'=>"col-md-3"));
+                ?>
+                <div class="col-md-9">
+                <?php
+                $options = array(
+                    'small'         => 'Small Shirt',
+                    'med'           => 'Medium Shirt',
+                    'large'         => 'Large Shirt',
+                    'xlarge'        => 'Extra Large Shirt',
+                    );
+
+                    $shirts_on_sale = array('small', 'large');
+                    echo form_dropdown('service', $options, 'large','class="form-control"');
+                ?>
                 </div>
             </div>
             <div class="form-group">

@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 {
                     ?><tr>
                     <?php
-                    echo '<td>'.$realisation->id.'</td><td>'.$realisation->titre.'</td><td>'.$realisation->idService.'</td><td>'.$realisation->description.'</td><td>'. anchor('Administrateur/realisations/edit/'.$realisation->id,'<span class="glyphicon glyphicon-pencil"></span>').' '.anchor('Administrateur/realisations/suppr/'.$realisation->id,'<span class="glyphicon glyphicon-remove"></span>').'</td>';
+                    echo '<td>'.$realisation->id.'</td><td>'.$realisation->titre.'</td><td>'.$realisation->nom_service.'</td><td>'.$realisation->description.'</td><td>'. anchor('Administrateur/realisations/edit/'.$realisation->id,'<span class="glyphicon glyphicon-pencil"></span>').' '.anchor('Administrateur/realisations/suppr/'.$realisation->id,'<span class="glyphicon glyphicon-remove"></span>').'</td>';
                     ?>
                     </tr>
                     <?php

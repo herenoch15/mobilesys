@@ -811,5 +811,10 @@ margin-top: 20px;
 		clear: both;
 		width:100%;
 	}
+	#PanelPAge #Droite.conteneurContact
+	{
+		top:-20px;
+		position: relative;
+	}
 }
 /****************** FIN CSS contact **********************/
