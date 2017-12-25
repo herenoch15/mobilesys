@@ -20,6 +20,7 @@ class Users extends MY_Controller
     public function index()
     {
 
+
         $this->layout->set_titre("MobileSys Admin | Messages");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
@@ -32,6 +33,7 @@ class Users extends MY_Controller
         $data=array();
 		$this->load->model('users_model','user');
 		$data["users"] = $this->user->read();
+		$data["current_user"] = $this->session->userdata("current_id");
         $data["active"]="Users";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
@@ -171,13 +173,13 @@ class Users extends MY_Controller
         $this->layout->ajouter_js("jsadmin/js");
 
 
-        $data=array();
-			$this->load->model('users_model','user');
-			$user = $this->user->read('*',array('id'=>$user_id));
-			
-			$data["id"]=$user_id;
-			$data["users"]=$user;
-        $data["active"]="user";
+		$data=array();
+		$this->load->model('users_model','user');
+		$user = $this->user->read('*',array('id'=>$user_id));
+
+		$data["id"]=$user_id;
+		$data["users"]=$user;
+		$data["active"]="user";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/Users/profile");
@@ -186,7 +188,7 @@ class Users extends MY_Controller
     public function suppr($user_id = NULL)
     {
 			$this->load->model('users_model','user');
-			if($this->user->delete(array('id' => $user_id),$data_echape)){
+			if($this->user->delete(array('id' => $user_id))){
 				redirect("Administrateur/Users/index");
 			}else{
 				$data["success"]="Error";

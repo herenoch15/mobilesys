@@ -17,8 +17,8 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-right">
-            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Nouveau</a>
-            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">Users</a>
+            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Create user</a>
+            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">See all users</a>
         </div>
     </div>
     <div class="row">
@@ -31,8 +31,8 @@
                 foreach($users as $key => $user)
                 {
                     echo '<tr>';
-                    echo '<td>'.$user->id.'</td><td>'.anchor('/Administrateur/users/profile/'.$user->id, $user->login,'class=""').'</td><td>'.$user->prenom.' '.$user->nom.'</td></td><td>'.$user->email.'</td><td>'.$user->date_create.'</td><td>'; echo anchor('Administrateur/users/edit/'.$user->id,'<span class="glyphicon glyphicon-pencil"></span>').' '.anchor('Administrateur/users/suppr/'.$user->id,'<span class="glyphicon glyphicon-remove"></span>');
-                    
+                    echo '<td>'.$user->id.'</td><td>'.anchor('/Administrateur/users/profile/'.$user->id, $user->login,'class=""').'</td><td>'.$user->prenom.' '.$user->nom.'</td></td><td>'.$user->email.'</td><td>'.$user->date_create.'</td><td>'; echo anchor('Administrateur/users/edit/'.$user->id,'<span class="glyphicon glyphicon-pencil"></span>');
+					if($current_user != $user->id) echo anchor('Administrateur/users/suppr/'.$user->id,'<span class="glyphicon glyphicon-remove"></span>');
                     echo '</td>';
                     echo '</tr>';
                 }

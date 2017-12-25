@@ -15,8 +15,8 @@
 <div class="container">
        <div class="row">
         <div class="col-lg-12 text-right">
-            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Nouveau</a>
-            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">Users</a>
+            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Create user</a>
+            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">See all users</a>
         </div>
     </div>
     <div class="row">

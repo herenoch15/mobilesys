@@ -15,9 +15,12 @@ class Messages extends MY_Controller
         parent::__construct();
         $validLogin=$this->testLogin();
         $this->testLoginAdmin();
+
     }
     public function index()
     {
+
+
         $this->layout->set_titre("MobileSys Admin | Messages");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
@@ -30,8 +33,11 @@ class Messages extends MY_Controller
         $data=array();
         $data["active"]="Messages";
 
+		$this->load->model('msg_contact_model','msg');
+		$data["msg"] = $this->msg->read();		
+		
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/Messages/list");
+        $this->layout->views("Administrateur/Messages/viewlistMessages");
         $this->layout->view("Administrateur/footerAdmin");
     }
 

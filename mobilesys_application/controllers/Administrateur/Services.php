@@ -13,13 +13,10 @@ class Services extends MY_Controller
         parent::__construct();
         $validLogin = $this->testLogin();
         $this->testLoginAdmin();
-        $this->load->model('services_model');
+		$this->load->model('services_model','all');
 
     }
 
-    /**
-     * Affichage list services
-     */
     public function index()
     {
         $this->layout->set_titre("MobileSys Admin | Services");
@@ -30,31 +27,18 @@ class Services extends MY_Controller
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js");
 
+
         $data=array();
+		$data["service"] = $this->all->read();
         $data["active"]="Services";
-        $data["services"] = $this->services_model->read();
-
-
-
 
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/Services/list");
+        $this->layout->views("Administrateur/Services/viewlistServices");
         $this->layout->view("Administrateur/footerAdmin");
+
     }
-
-
-    /**
-     * Ajout  services
-     */
-    public  function create()
+    public function create()
     {
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-
-
-        $this->form_validation->set_rules('nom_service','Nom service','trim|required');
-        $this->form_validation->set_rules('description','Desciption','trim|required');
-
         $this->layout->set_titre("MobileSys Admin | Services");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
@@ -65,41 +49,62 @@ class Services extends MY_Controller
 
 
         $data=array();
-        $data["active"]="Services";
-        if($this->form_validation->run())
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('nom','Nom service','trim|required');
+        $this->form_validation->set_rules('description','Description','trim');
+        if($this->form_validation->run()===FALSE)
         {
-             //Si valide
-            $options_echappees=array();
-            $options_non_echappees=array();
-            $options_echappees=$this->input->post();
-
-            $this->services_model->create($options_echappees,$options_non_echappees);
-
+            $this->load->helper('form');
+			$data["success"]="";
+			$data["alert"]="";
         }
         else
         {
-            $data["success"]="";
-            $data["alert"]="";
-        }
 
+            $data_echape = array(
+                'nom_service' => $this->input->post('nom'),
+                'description'  => $this->input->post('description')
+            );
+			
+			
+				$config['upload_path'] = './assets/uploads/';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['overwrite'] = FALSE;
+
+				$this->load->library('upload', $config);
+                        $data['error']= "fichier tsy lasa";
+				
+                if ( ! $this->upload->do_upload('logo'))
+                {
+                        $data['error']= $this->upload->display_errors();
+                }
+                else
+                {
+					$file_name = $this->upload->data('file_name');
+                    $data['error'] = 'success';
+					$data_echape = array_merge($data_echape,array(
+                	'logo_service' => $file_name));
+                }
+			if($this->all->create($data_echape)){
+				$data["success"]="Successfull";
+				$data["alert"]="success";
+				unset($_POST);
+				$this->form_validation->reset_validation();
+			}else{
+				$data["success"]="Error";
+				$data["alert"]="danger";
+			}
+		}
+        $data["active"]="Services";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/services/create");
+        $this->layout->views("Administrateur/Services/create");
         $this->layout->view("Administrateur/footerAdmin");
+
     }
-
-    /**
-     * Edit  services
-     */
-    public function edit($id)
+    public function edit($id = null)
     {
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-
-
-        $this->form_validation->set_rules('nom_service','Nom service','trim|required');
-        $this->form_validation->set_rules('description','Desciption','trim|required');
-
+		if(is_null($id)) redirect("Administrateur/services/create");
         $this->layout->set_titre("MobileSys Admin | Services");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
@@ -110,31 +115,73 @@ class Services extends MY_Controller
 
 
         $data=array();
-        $data["active"]="Services";
-        if($this->form_validation->run())
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('nom','Nom service','trim|required');
+        $this->form_validation->set_rules('description','Description','trim');
+		
+			$data['service'] = $this->all->read('*',array("id"=>$id));
+        if($this->form_validation->run()===FALSE)
         {
-            //Si valide
-            $options_echappees=array();
-            $options_non_echappees=array();
-            $options_echappees=$this->input->post();
-            $this->services_model->create($options_echappees,$options_non_echappees);
+            $this->load->helper('form');
+			$data["success"]="";
+			$data["alert"]="";
         }
         else
         {
-            $data["success"]="";
-            $data["alert"]="";
 
-            $service = $this->services_model->read('*',array('idService'=>$id));
-            $data["service"]=$service[0];
+            $data_echape = array(
+                'nom_service' => $this->input->post('nom'),
+                'description'  => $this->input->post('description')
+            );
+			$data['error']= "tsy misy fichier";
+			
+				$config['upload_path'] = './assets/uploads/';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['overwrite'] = FALSE;
 
-        }
+				$this->load->library('upload', $config);
+                        $data['error']= "upload fichier";
+				
+                if ( ! $this->upload->do_upload('logo'))
+                {
+					$data['error']= $this->upload->display_errors();
+                }
+                else
+                {
+					$file_name = $this->upload->data('file_name');
+                    $data['error'] = 'success';
+					$data_echape = array_merge($data_echape,array(
+                	'logo_service' => $file_name));
+                }
 
+			
+			
+			if($this->all->update(array("id"=>$id),$data_echape)){
+				$data["success"]="Successfull";
+				$data["alert"]="success";
+				//unset($_POST);
+				//$this->form_validation->reset_validation();
+			}else{
+				$data["success"]="Error";
+				$data["alert"]="danger";
+			}
+		}
+        $data["active"]="Services";
 
         $this->layout->views("Administrateur/headerAdmin",$data);
-        $this->layout->views("Administrateur/services/edit");
+        $this->layout->views("Administrateur/Services/edit");
         $this->layout->view("Administrateur/footerAdmin");
+
     }
-
-
+    public function suppr($id = NULL)
+    {
+			if($this->all->delete(array('id' => $id))){
+				redirect("Administrateur/Services/index");
+			}else{
+				$data["success"]="Error";
+				$data["alert"]="danger";
+			}
+		
+	}
 }
 ?>
