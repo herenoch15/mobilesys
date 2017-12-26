@@ -6,7 +6,7 @@
  * Time: 05:55
  */
 ?>
-<div id="PanelPAge" class="row">
+<div class="row panelPAge">
     <div id="accueilPage" >
 
 	    <div class="panel-titreServ row" >

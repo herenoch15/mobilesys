@@ -41,8 +41,9 @@ class Accueil extends CI_Controller
         $data["menueActive"]="Accueil";
 	 	$this->layout->Entete("Entetepage",$data);
 	 	$this->layout->Pied("Pied_page");
-        $this->layout->views("Accueil/view_introduction");
+     
         $this->layout->views("Accueil/view_derniersrealisations");
+        $this->layout->views("Accueil/view_introduction");
         $this->layout->view("Accueil/view_services");
        	
 	}
