@@ -57,12 +57,12 @@ class Users extends MY_Controller
 
         $data=array();
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('first_name','First name','trim|required');
-        $this->form_validation->set_rules('last_name','Last name','trim|required');
-        $this->form_validation->set_rules('username','Username','trim|required');
+        $this->form_validation->set_rules('nom','First name','trim|required');
+        $this->form_validation->set_rules('prenom','Last name','trim|required');
+        $this->form_validation->set_rules('login','Username','trim|required');
         $this->form_validation->set_rules('email','Email','trim|required|valid_email');
         $this->form_validation->set_rules('password','Password','required|min_length[6]');
-        $this->form_validation->set_rules('password_confirm','Password confirmation','required|matches[password]');
+       // $this->form_validation->set_rules('password_confirm','Password confirmation','required|matches[password]');
         if($this->form_validation->run()===FALSE)
         {
             $this->load->helper('form');
@@ -73,15 +73,10 @@ class Users extends MY_Controller
         {
             $this->load->model('users_model','user');
 
-            $data_echape = array(
-                'nom' => $this->input->post('first_name'),
-                'prenom'  => $this->input->post('last_name'),
-                'login'  => $this->input->post('username'),
-                'password'  => $this->input->post('password'),
-                'email' => $this->input->post('email'),
-                'date_create'  => date("Y-m-d")
-            );
-			
+             $data_echape = array();
+            $data_echape=$this->input->post();
+            $data_echape['date_create']=date("Y-m-d");
+            
 			if($this->user->create($data_echape)){
 				$data["success"]="Successfull";
 				$data["alert"]="success";

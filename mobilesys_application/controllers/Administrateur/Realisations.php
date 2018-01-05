@@ -174,6 +174,7 @@ class Realisations extends MY_Controller
 			}
 		}
         $data["active"]="Realisations";
+        $data["id"]=$id;
 
         $this->layout->views("Administrateur/headerAdmin",$data);
         $this->layout->views("Administrateur/Realisation/edit");

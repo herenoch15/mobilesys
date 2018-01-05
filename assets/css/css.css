@@ -251,6 +251,19 @@ body #ajax-loader
 
 
 /*************** DEBUT CSS Accueil ******************/
+#panelIntrodution
+{
+	margin-top: 10px;
+}
+#panelIntrodution #titreIntroduction
+{
+	font-size: 18px;
+}
+#imgIntro
+{
+	height: 100%;
+	width: 100%
+}
 #panelslideServiceccueil
 {
 	display: none;
@@ -302,6 +315,13 @@ body #ajax-loader
 	margin-left: 4px;
 	width: 24%;
 }
+
+#panelslideServiceccueil .pagination
+{
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+ 	display: none;
+}
 /*
 #slide-DernierRealisation .item .row:first-child
 {
@@ -327,6 +347,7 @@ body #ajax-loader
 	font-size: 13px;
 	margin-bottom: 20px;
 	margin-left: 10px;
+	border-radius: 0px;
 }
 #myCarousel  .carousel-control
 {

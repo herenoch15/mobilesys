@@ -32,7 +32,7 @@
               <div class="col-md-9">
                 <?php 
 				  echo form_error('first_name');
-                echo form_input('first_name',set_value('first_name'),'class="form-control"');
+                echo form_input('nom',set_value('Nom'),'class="form-control"');
                 ?>
 				</div>
             </div>
@@ -43,7 +43,7 @@
 				<div class="col-md-9">
 				<?php
 				echo form_error('last_name');
-				echo form_input('last_name',set_value('last_name'),'class="form-control"');
+				echo form_input('prenom',set_value('Prenom'),'class="form-control"');
 				?>
 				</div>
             </div>
@@ -54,13 +54,13 @@
                <div class="col-md-9">
                 <?php
                 echo form_error('username');
-                echo form_input('username',set_value('username'),'class="form-control"');
+                echo form_input('login',set_value('Login'),'class="form-control"');
                 ?>
 				</div>
             </div>
             <div class="form-group">
 				<?php
-                echo form_label('Email','email',array('class'=>"col-md-3"));
+                echo form_label('email','Email',array('class'=>"col-md-3"));
                 ?>
                <div class="col-md-9">
                 <?php
@@ -87,7 +87,7 @@
                <div class="col-md-9">
                 <?php
                 echo form_error('password_confirm');
-                echo form_password('password_confirm','','class="form-control"');
+                echo form_password(null,'','class="form-control"');
                 ?>
 				</div>
             </div>
@@ -106,9 +106,12 @@
                         echo '</div>';
                     }
                 }
+
+               
+
                 ?>
             </div>
-            <?php echo form_submit('submit', 'Create user', 'class="btn btn-primary btn-lg"');?>
+            <?php echo form_submit(null,'Create user', 'class="btn btn-primary btn-lg"');?>
             <?php echo anchor('/Administrateur/users', 'Cancel','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
     </div>

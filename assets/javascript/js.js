@@ -3,14 +3,22 @@ $(document).ready(function (e)
 {
 
 
+    //JS SLIDE HAUT PAGE D'ACCUEIL
+    $("#panelslideServiceccueil").mouseenter(function()
+    {
+        $("#panelslideServiceccueil a.pagination").css("display","block");
+    });
+    $("#panelslideServiceccueil").mouseleave(function()
+    {
+        $("#panelslideServiceccueil a.pagination").css("display","none");
+    });
+    
+
  
     if($("#myNavbar a.active").attr("menuep")=="Accueil")
     {
         $("#panelslideServiceccueil").css("display","block");
     }
-
-
-
 
     $("#mobilSysmenue").click(function (e){
 
@@ -107,8 +115,6 @@ $(document).ready(function (e)
         datatransfert=$("#frmcontact").serializeArray();
         $.post(url,datatransfert,function(e)
         {
-            //alert(e);
-            
              $("#Info_mobileSys").modal({
                     keyboard: true,
                     show: true});

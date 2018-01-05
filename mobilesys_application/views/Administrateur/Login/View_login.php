@@ -11,7 +11,7 @@
                     <div class="form-group" >
                         <div class="col-xs-10 col-xs-push-1 col-xs-pull-1 input-group" >
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="login" type="text" class="form-control" name="login" value="" placeholder="">
+                            <input id="login" type="text" class="form-control" name="login" value="" placeholder="Login">
                         </div>
                     </div>
                 </div>
@@ -20,7 +20,8 @@
                     <div class="form-group">
                         <div class="col-xs-10 col-xs-push-1 col-xs-pull-1 input-group" >
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input class="form-control" type="password" id="password" name="password" value="">
+                            <input class="form-control" type="password" id="password" name="password" value=""  placeholder="Mot de passe">
+                        </div>
                         </div>
                     </div>
                 </div>
