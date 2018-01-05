@@ -36,7 +36,7 @@
         		<img id="imgIntro" src="<?php print(site_url("assets/images/img_flower2.jpg"));?>"  >
         	</div>
         	<div class="col-md-7">
-        		<p>
+        		<p id="motDirecteur">
         		Je ne sais pas comment j’aurais réagi à un échec. Idem pour le peuple argentin. Une non-qualification pour la Russie aurait été l’un des pires moments de l’histoire footballistique du pays.
         		</p>    		
         	</div>

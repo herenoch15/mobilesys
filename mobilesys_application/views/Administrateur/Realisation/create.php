@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div>Création realisation</div>
+        <div id="titrePage">Création realisation</div>
     </div>
 </div>
 
@@ -15,32 +15,17 @@
 <div class="container">
        <div class="row">
         <div class="col-lg-12 text-right">
-            <a href="<?php echo site_url('Administrateur/realisations/create');?>" class="btn btn-primary">Create realisation</a>
-            <a href="<?php echo site_url('Administrateur/realisations');?>" class="btn btn-primary">See all realisations</a>
+            <a href="<?php echo site_url('Administrateur/realisations/create');?>" class="btn btn-primary">Nouveau realisation</a>
+            <a href="<?php echo site_url('Administrateur/realisations');?>" class="btn btn-primary">Réalisations listes</a>
         </div>
     </div>
-    <div class="row">
+    <div id="bodyPage" class="row">
 		<div class="col-md-6 col-md-offset-3">
-            <h1>Create realisation</h1>
             <?php
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_create');
 			echo form_open_multipart('/Administrateur/realisations/create',$attributes);?>
             
-            <div class="form-group">
-				<?php
-				echo form_label('service','Service',array('class'=>"col-md-3"));
-				?>
-				<div class="col-md-9">
-				<?php
-					$svc = array();
-					foreach($services as $key){
-						$svc[$key->id] = $key->nom_service;
-					}
-				echo form_error('service');
-				echo form_dropdown('service',$svc,set_value('service'),'class="form-control"');
-				?>
-				</div>
-            </div>
+
             <div class="form-group">
                 <?php
                 echo form_label('Titre','titre',array('class'=>"col-md-3"));
@@ -53,13 +38,28 @@
 				</div>
             </div>
             <div class="form-group">
+                <?php
+                echo form_label('service','Service',array('class'=>"col-md-3"));
+                ?>
+                <div class="col-md-9">
+                    <?php
+                    $svc = array();
+                    foreach($services as $key){
+                        $svc[$key->id] = $key->nom_service;
+                    }
+                    echo form_error('service');
+                    echo form_dropdown('service',$svc,set_value('service'),'class="form-control"');
+                    ?>
+                </div>
+            </div>
+            <div class="form-group">
 				<?php
 				echo form_label('Description','description',array('class'=>"col-md-3"));
 				?>
 				<div class="col-md-9">
 				<?php
 				echo form_error('description');
-				echo form_input('description',set_value('description'),'class="form-control"');
+				echo form_textarea('description',set_value('description'),'class="form-control"');
 				?>
 				</div>
             </div>

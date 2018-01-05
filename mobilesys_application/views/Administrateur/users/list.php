@@ -8,7 +8,7 @@
 ?>
 <div class="row">
     <div class="col-sm-12">
-        <div>Utilisateur</div>
+        <div id="titrePage">Utilisateurs listes</div>
     </div>
 </div>
 
@@ -17,17 +17,17 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-right">
-            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Create user</a>
-            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">See all users</a>
+            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Nouveau utilisateur</a>
+            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">Utilisateurs listes</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12" style="margin-top: 10px;">
+    <div id="bodyPage" class="row">
+        <div id="panel_listMobilsys" class="col-lg-12" style="margin-top: 10px;">
             <?php
             if(!empty($users))
             {				
                 echo '<table class="table table-hover table-bordered table-condensed">';
-                echo '<tr><td>ID</td><td>Username</td></td><td>Name</td><td>Email</td><td>Update</td><td>Operations</td></tr>';
+                echo '<tr><td>ID</td><td>Nom</td></td><td>Prenom</td><td>Email</td><td>Update</td><td>Operations</td></tr>';
                 foreach($users as $key => $user)
                 {
                     echo '<tr>';

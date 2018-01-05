@@ -1,3 +1,7 @@
+body
+{
+    background: #326295;
+}
 .container
 {
     width: 100%;
@@ -14,8 +18,32 @@ li#logout
     float: right;
     margin-top: -9px;
 }
+#headerAdmin .nav-tabs > li a
+{
+    color: #fff;
+}
+#headerAdmin .nav-tabs > li.active a
+{
+    color:#326295
+}
+#panel_listMobilsys
+{
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+}
+#titrePage
+{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px
+}
 
-
+#bodyPage
+{
+    color: #fff;
+    margin-top: 50px;
+}
 
 
 

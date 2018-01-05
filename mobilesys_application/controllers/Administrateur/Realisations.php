@@ -126,7 +126,7 @@ class Realisations extends MY_Controller
         $this->form_validation->set_rules('service','service','required');
         $this->form_validation->set_rules('titre','Titre','trim|required');
         $this->form_validation->set_rules('description','Description','trim');
-			$data['realisations'] = $this->all->read('*',array("id"=>$id));
+			$data['realisations'] = $this->all->read('*',array("id"=>$id))[0];
 		
         if($this->form_validation->run()===FALSE)
         {
@@ -174,6 +174,8 @@ class Realisations extends MY_Controller
 			}
 		}
         $data["active"]="Realisations";
+
+
         $data["id"]=$id;
 
         $this->layout->views("Administrateur/headerAdmin",$data);

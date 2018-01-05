@@ -2,12 +2,12 @@
 <div class="container" style="margin-top:60px;">
     <div class="row">
         <div class="col-lg-12">
-            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Create user</a>
-            <a href="<?php echo site_url('Administrateur/users/');?>" class="btn btn-primary">See all users</a>
+            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Nouveau utilisateur</a>
+            <a href="<?php echo site_url('Administrateur/users/');?>" class="btn btn-primary">Utilisateurs listes</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12" style="margin-top: 10px;">
+    <div id="bodyPage" class="row">
+        <div class="col-lg-12" >
             <?php
             if(!empty($users))
             {

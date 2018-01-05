@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div>Création utilisateur</div>
+        <div id="titrePage">Création utilisateur</div>
     </div>
 </div>
 
@@ -15,13 +15,12 @@
 <div class="container">
        <div class="row">
         <div class="col-lg-12 text-right">
-            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Create user</a>
-            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">See all users</a>
+            <a href="<?php echo site_url('Administrateur/users/create');?>" class="btn btn-primary">Nouveau utilisateur</a>
+            <a href="<?php echo site_url('Administrateur/users');?>" class="btn btn-primary">Utilisateurs listes</a>
         </div>
     </div>
-    <div class="row">
+    <div id="bodyPage" class="row">
 		<div class="col-md-6 col-md-offset-3">
-            <h1>Edit user</h1>
             <?php
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_create');
 			echo form_open('/Administrateur/users/edit/'.$user,$attributes);?>

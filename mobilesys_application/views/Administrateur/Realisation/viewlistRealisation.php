@@ -8,8 +8,7 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div>
-Realisation LISTES</div>
+        <div id="titrePage">Réalisation listes</div>
     </div>
 </div>
 
@@ -18,17 +17,17 @@ Realisation LISTES</div>
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-right">
-            <a href="<?php echo site_url('Administrateur/realisations/create');?>" class="btn btn-primary">Create realisations</a>
-            <a href="<?php echo site_url('Administrateur/realisations/');?>" class="btn btn-primary">See all Realisation</a>
+            <a href="<?php echo site_url('Administrateur/realisations/create');?>" class="btn btn-primary">Nouveau realisation</a>
+            <a href="<?php echo site_url('Administrateur/realisations/');?>" class="btn btn-primary">Réalisations listes</a>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12" style="margin-top: 10px;">
+        <div id="panel_listMobilsys" class="col-lg-12" style="margin-top: 10px;">
             <?php
             if(!empty($realisations))
             {
                 echo '<table class="table table-hover table-bordered table-condensed">';
-                echo '<tr><td>ID</td><td>nom Realisation </td></td><td>description</td><td>logo </td><td>Service</td><td> </td></tr>';
+                echo '<tr><td>ID</td><td>Realisation </td></td><td>Description</td><td>Logo </td><td>Service</td><td> </td></tr>';
                 foreach($realisations as $all)
                 {
                     echo '<tr>';
