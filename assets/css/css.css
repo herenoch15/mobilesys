@@ -24,8 +24,6 @@ body #ajax-loader
 	top:0px;
 	z-index:80000;
 }
-
-
 /************ FIN  CSS loader ************/
 .container
 {
@@ -132,6 +130,12 @@ body #ajax-loader
 #mobilSysmenue,#Panelmenue  #myNavbar ul li a
 {
 	background: rgb(0,159,227);
+}
+
+#myCarouselDernierRealis .carousel-cont.left
+{
+	background-image:none;
+	background: none;
 }
 
 @media (max-width:  768px)
@@ -338,6 +342,7 @@ body #ajax-loader
 	margin-bottom: 0!important;
  	display: none;
 }
+
 /*
 #slide-DernierRealisation .item .row:first-child
 {

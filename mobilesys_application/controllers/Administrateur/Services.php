@@ -42,9 +42,12 @@ class Services extends MY_Controller
         $this->layout->set_titre("MobileSys Admin | Services");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
+        $this->layout->ajouter_css("cssadmin/fileinput.min");
 
         $this->layout->ajouter_js("jquery-3.2.1");
         $this->layout->ajouter_js("bootstrap.min");
+        $this->layout->ajouter_js("jsadmin/fileinput.min");
+        $this->layout->ajouter_js("jsadmin/fileinput_locale_fr");
         $this->layout->ajouter_js("jsadmin/js");
 
 
@@ -119,7 +122,7 @@ class Services extends MY_Controller
         $this->form_validation->set_rules('nom','Nom service','trim|required');
         $this->form_validation->set_rules('description','Description','trim');
 		
-			$data['service'] = $this->all->read('*',array("id"=>$id));
+			$data['service'] = $this->all->read('*',array("id"=>$id))[0];
         if($this->form_validation->run()===FALSE)
         {
             $this->load->helper('form');

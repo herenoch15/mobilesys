@@ -52,14 +52,27 @@
                 ?>
                <div class="col-md-9">
                 <?php
+                $attributfile=array();
+                $attributfile["id"]="logo";
+                $attributfile["accept"]="images/*";
+                $attributfile["class"]="form-control";
                 echo form_error('logo');
-                echo form_upload('logo',set_value('logo'),'class="form-control"');
+                echo form_upload('logo',set_value('logo'),$attributfile);
                 ?>
 				</div>
             </div>
-            <?php echo form_submit('submit', 'Create service', 'class="btn btn-primary btn-lg"');?>
-            <?php echo anchor('/Administrateur/services', 'Cancel','class="btn btn-default btn-lg"');?>
+            <?php echo form_submit('submit', 'Enregistrer', 'class="btn btn-primary btn-lg"');?>
+            <?php echo anchor('/Administrateur/services', 'Annuler','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
     </div>
     </div>
 </div>
+
+
+
+<script>
+    $('#logo').fileinput({
+        language: 'fr',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+</script>

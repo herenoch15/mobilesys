@@ -22,7 +22,7 @@
     <div id="bodyPage" class="row" >
 		<div class="col-md-6 col-md-offset-3">
             <?php
-			foreach($service as $service){
+
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_edit');
 			echo form_open_multipart('/Administrateur/services/edit/'.$service->id,$attributes);?>
             <div class="form-group">
@@ -58,8 +58,8 @@
                 ?>
 				</div>
             </div>
-            <?php } echo form_submit('submit', 'Edit service', 'class="btn btn-primary btn-lg"');?>
-            <?php echo anchor('/Administrateur/services', 'Cancel','class="btn btn-default btn-lg"');?>
+            <?php  echo form_submit('submit', 'Enregistrer', 'class="btn btn-primary btn-lg"');?>
+            <?php echo anchor('/Administrateur/services', 'Annuler','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
     </div>
     </div>

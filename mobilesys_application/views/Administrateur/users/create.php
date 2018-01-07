@@ -26,7 +26,7 @@
 			echo form_open('/Administrateur/users/create',$attributes);?>
             <div class="form-group">
                 <?php
-                echo form_label('First name','first_name',array('class'=>"col-md-3"));
+                echo form_label('Nom','first_name',array('class'=>"col-md-3"));
                 ?>
               <div class="col-md-9">
                 <?php 
@@ -37,7 +37,7 @@
             </div>
             <div class="form-group">
 				<?php
-				echo form_label('Last name','last_name',array('class'=>"col-md-3"));
+				echo form_label('Prenom','last_name',array('class'=>"col-md-3"));
 				?>
 				<div class="col-md-9">
 				<?php
@@ -48,7 +48,7 @@
             </div>
             <div class="form-group">
                 <?php
-                echo form_label('Username','username',array('class'=>"col-md-3"));
+                echo form_label('Login','username',array('class'=>"col-md-3"));
                 ?>
                <div class="col-md-9">
                 <?php
@@ -59,7 +59,7 @@
             </div>
             <div class="form-group">
 				<?php
-                echo form_label('email','Email',array('class'=>"col-md-3"));
+                echo form_label('Email','Email',array('class'=>"col-md-3"));
                 ?>
                <div class="col-md-9">
                 <?php
@@ -110,8 +110,8 @@
 
                 ?>
             </div>
-            <?php echo form_submit(null,'Create user', 'class="btn btn-primary btn-lg"');?>
-            <?php echo anchor('/Administrateur/users', 'Cancel','class="btn btn-default btn-lg"');?>
+            <?php echo form_submit(null,'Enregistrer', 'class="btn btn-primary btn-lg"');?>
+            <?php echo anchor('/Administrateur/users', 'Annuler','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
     </div>
     </div>

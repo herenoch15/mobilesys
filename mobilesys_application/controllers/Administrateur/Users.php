@@ -118,10 +118,10 @@ class Users extends MY_Controller
         $this->form_validation->set_rules('password_confirm','Password confirmation','required|matches[password]');
             $this->load->helper('form');
 			$this->load->model('users_model','user');
-			$user = $this->user->read('*',array('id'=>$user_id));
+            $data["users"] = $this->user->read('*',array('id'=>$user_id))[0];
 			
 			$data["user"]=$user_id;
-			$data["users"]=$user;
+
         if($this->form_validation->run()===FALSE)
         {
 			$data["success"]="";
@@ -184,7 +184,7 @@ class Users extends MY_Controller
     {
 			$this->load->model('users_model','user');
 			if($this->user->delete(array('id' => $user_id))){
-				redirect("Administrateur/Users/index");
+				redirect("Administrateur/users/");
 			}else{
 				$data["success"]="Error";
 				$data["alert"]="danger";

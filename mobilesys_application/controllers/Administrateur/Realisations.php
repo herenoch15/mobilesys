@@ -23,6 +23,7 @@ class Realisations extends MY_Controller
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
 
+
         $this->layout->ajouter_js("jquery-3.2.1");
         $this->layout->ajouter_js("bootstrap.min");
         $this->layout->ajouter_js("jsadmin/js");
@@ -42,9 +43,12 @@ class Realisations extends MY_Controller
         $this->layout->set_titre("MobileSys Admin | Realisation");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
+        $this->layout->ajouter_css("cssadmin/fileinput.min");
 
         $this->layout->ajouter_js("jquery-3.2.1");
         $this->layout->ajouter_js("bootstrap.min");
+        $this->layout->ajouter_js("jsadmin/fileinput.min");
+        $this->layout->ajouter_js("jsadmin/fileinput_locale_fr");
         $this->layout->ajouter_js("jsadmin/js");
 
 
@@ -127,6 +131,7 @@ class Realisations extends MY_Controller
         $this->form_validation->set_rules('titre','Titre','trim|required');
         $this->form_validation->set_rules('description','Description','trim');
 			$data['realisations'] = $this->all->read('*',array("id"=>$id))[0];
+
 		
         if($this->form_validation->run()===FALSE)
         {
@@ -186,7 +191,7 @@ class Realisations extends MY_Controller
     public function suppr($id = NULL)
     {
 			if($this->all->delete(array('id' => $id))){
-				redirect("Administrateur/Realisation/index");
+				redirect("Administrateur/realisations");
 			}else{
 				$data["success"]="Error";
 				$data["alert"]="danger";

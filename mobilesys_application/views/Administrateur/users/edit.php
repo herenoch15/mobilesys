@@ -24,37 +24,37 @@
             <?php
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_create');
 			echo form_open('/Administrateur/users/edit/'.$user,$attributes);?>
-            <?php foreach($users as $key => $user){	?>
+
             <div class="form-group">
                 <?php
-                echo form_label('First name','first_name',array('class'=>"col-md-3"));
+                echo form_label('Nom','first_name',array('class'=>"col-md-3"));
                 ?>
               <div class="col-md-9">
                 <?php 
 				  echo form_error('first_name');
-                echo form_input('first_name',set_value('first_name',$user->nom),'class="form-control"');
+                echo form_input('first_name',set_value('first_name',$users->nom),'class="form-control"');
                 ?>
 				</div>
             </div>
             <div class="form-group">
 				<?php
-				echo form_label('Last name','last_name',array('class'=>"col-md-3"));
+				echo form_label('Prenom','last_name',array('class'=>"col-md-3"));
 				?>
 				<div class="col-md-9">
 				<?php
 				echo form_error('last_name');
-				echo form_input('last_name',set_value('last_name',$user->prenom),'class="form-control"');
+				echo form_input('last_name',set_value('last_name',$users->prenom),'class="form-control"');
 				?>
 				</div>
             </div>
             <div class="form-group">
                 <?php
-                echo form_label('Username','username',array('class'=>"col-md-3"));
+                echo form_label('Login','username',array('class'=>"col-md-3"));
                 ?>
                <div class="col-md-9">
                 <?php
                 echo form_error('username');
-                echo form_input('username',set_value('username',$user->login),'class="form-control"');
+                echo form_input('username',set_value('username',$users->login),'class="form-control"');
                 ?>
 				</div>
             </div>
@@ -65,7 +65,7 @@
                <div class="col-md-9">
                 <?php
                 echo form_error('email');
-                echo form_input('email',set_value('email',$user->email),'class="form-control"');
+                echo form_input('email',set_value('email',$users->email),'class="form-control"');
                 ?>
 				</div>
             </div>
@@ -108,9 +108,9 @@
                 }
                 ?>
             </div>
-<?php } ?>
-            <?php echo form_submit('submit', 'Save', 'class="btn btn-primary btn-lg"');?>
-            <?php echo anchor('/Administrateur/users', 'Cancel','class="btn btn-default btn-lg"');?>
+
+            <?php echo form_submit('submit', 'Enregistrer', 'class="btn btn-primary btn-lg"');?>
+            <?php echo anchor('/Administrateur/users', 'Annuler','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
     </div>
     </div>

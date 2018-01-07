@@ -76,8 +76,8 @@
                 ?>
 				</div>
             </div>
-            <?php echo form_submit('submit', 'Edit realisation', 'class="btn btn-primary btn-lg"');?>
-            <?php echo anchor('/Administrateur/realisations', 'Cancel','class="btn btn-default btn-lg"');?>
+            <?php echo form_submit('submit', 'Enregistrer', 'class="btn btn-primary btn-lg"');?>
+            <?php echo anchor('/Administrateur/realisations', 'Annuler','class="btn btn-default btn-lg"');?>
             <?php echo form_close();?>
     </div>
     </div>

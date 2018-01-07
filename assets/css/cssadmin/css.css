@@ -67,3 +67,23 @@ li#logout
  font-size: 11px;
 }
 /**************************** FIN CSS MESSAGES ***********************/
+
+.btnsup_service,
+.btnsup_realisation,
+.btnsup_user
+{
+    border: 0;
+    background: none;
+    color: #337ab7
+}
+
+
+/************************ CSS MODAL **************************/
+.panelfooter
+{
+    text-align: center;
+}
+.modal-dialog
+{
+    margin-top: 14%;
+}
