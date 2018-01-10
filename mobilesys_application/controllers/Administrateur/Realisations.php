@@ -75,7 +75,7 @@ class Realisations extends MY_Controller
             );
 			
 			
-				$config['upload_path'] = './assets/uploads/';
+				$config['upload_path'] = './assets/images/realisations/';
 				$config['allowed_types'] = 'gif|jpg|jpeg|png';
 				$config['overwrite'] = FALSE;
 
@@ -84,15 +84,19 @@ class Realisations extends MY_Controller
 				
                 if ( ! $this->upload->do_upload('image'))
                 {
+                    print ("error");
                         $data['error']= $this->upload->display_errors();
                 }
                 else
                 {
-					$file_name = $this->upload->data('file_name');
+					$file_name = "realisations/".$this->upload->data('file_name');
                     $data['error'] = 'success';
 					$data_echape = array_merge($data_echape,array(
                 	'image' => $file_name));
+
                 }
+
+           // exit();
 			if($this->all->create($data_echape)){
 				$data["success"]="Successfull";
 				$data["alert"]="success";
@@ -116,9 +120,12 @@ class Realisations extends MY_Controller
         $this->layout->set_titre("MobileSys Admin | Realisation");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
+        $this->layout->ajouter_css("cssadmin/fileinput.min");
 
         $this->layout->ajouter_js("jquery-3.2.1");
         $this->layout->ajouter_js("bootstrap.min");
+        $this->layout->ajouter_js("jsadmin/fileinput.min");
+        $this->layout->ajouter_js("jsadmin/fileinput_locale_fr");
         $this->layout->ajouter_js("jsadmin/js");
 
 
@@ -149,7 +156,7 @@ class Realisations extends MY_Controller
             );
 			
 			
-				$config['upload_path'] = './assets/uploads/';
+				$config['upload_path'] = './assets/images/realisations/';
 				$config['allowed_types'] = 'gif|jpg|jpeg|png';
 				$config['overwrite'] = FALSE;
 
@@ -162,11 +169,13 @@ class Realisations extends MY_Controller
                 }
                 else
                 {
-					$file_name = $this->upload->data('file_name');
+					$file_name = "realisations/".$this->upload->data('file_name');
+
                     $data['error'] = 'success';
 					$data_echape = array_merge($data_echape,array(
                 	'image' => $file_name));
                 }
+
 
 			if($this->all->update(array("id"=>$id),$data_echape)){
 				$data["success"]="Successfull";

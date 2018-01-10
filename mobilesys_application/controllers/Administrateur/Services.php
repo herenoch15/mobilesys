@@ -70,7 +70,7 @@ class Services extends MY_Controller
             );
 			
 			
-				$config['upload_path'] = './assets/uploads/';
+				$config['upload_path'] = './assets/images/services';
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['overwrite'] = FALSE;
 
@@ -83,7 +83,9 @@ class Services extends MY_Controller
                 }
                 else
                 {
-					$file_name = $this->upload->data('file_name');
+					$file_name = "services/".$this->upload->data('file_name');
+
+
                     $data['error'] = 'success';
 					$data_echape = array_merge($data_echape,array(
                 	'logo_service' => $file_name));
@@ -111,10 +113,15 @@ class Services extends MY_Controller
         $this->layout->set_titre("MobileSys Admin | Services");
         $this->layout->ajouter_css("bootstrap/css/bootstrap");
         $this->layout->ajouter_css("cssadmin/css");
+        $this->layout->ajouter_css("cssadmin/fileinput.min");
+
 
         $this->layout->ajouter_js("jquery-3.2.1");
         $this->layout->ajouter_js("bootstrap.min");
+        $this->layout->ajouter_js("jsadmin/fileinput.min");
+        $this->layout->ajouter_js("jsadmin/fileinput_locale_fr");
         $this->layout->ajouter_js("jsadmin/js");
+
 
 
         $data=array();
@@ -138,7 +145,7 @@ class Services extends MY_Controller
             );
 			$data['error']= "tsy misy fichier";
 			
-				$config['upload_path'] = './assets/uploads/';
+				$config['upload_path'] = './assets/images/services';
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['overwrite'] = FALSE;
 
@@ -151,7 +158,7 @@ class Services extends MY_Controller
                 }
                 else
                 {
-					$file_name = $this->upload->data('file_name');
+					$file_name = "services/".$this->upload->data('file_name');
                     $data['error'] = 'success';
 					$data_echape = array_merge($data_echape,array(
                 	'logo_service' => $file_name));

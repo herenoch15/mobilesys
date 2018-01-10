@@ -36,7 +36,7 @@
                     {
                         ?>
                     <tr>
-                        <td><?php echo $all->id; ?></td><td><?php echo $all->nom_service; ?></td><td><?php echo $all->description; ?></td><td> <img height="25" width="25" src="<?php echo site_url("/assets/uploads/".$all->logo_service); ?>" /></td><td><?php echo anchor('Administrateur/services/edit/'.$all->id,'<span class="glyphicon glyphicon-pencil"></span>'); ?><button  id="<?php echo $all->id; ?>"  class="btnsup_service glyphicon glyphicon-remove"></button></td>
+                        <td><?php echo $all->id; ?></td><td><?php echo $all->nom_service; ?></td><td><?php echo $all->description; ?></td><td> <img height="25" width="25" src="<?php echo site_url("/assets/images/".$all->logo_service); ?>" /></td><td><?php echo anchor('Administrateur/services/edit/'.$all->id,'<span class="glyphicon glyphicon-pencil"></span>'); ?><button  id="<?php echo $all->id; ?>"  class="btnsup_service glyphicon glyphicon-remove"></button></td>
                     </tr>
                     <?php
                     }

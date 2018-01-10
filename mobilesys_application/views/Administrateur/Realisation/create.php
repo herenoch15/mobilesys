@@ -71,12 +71,12 @@
                 <?php
 
                 $attributfile=array();
-                $attributfile["id"]="logo";
+                $attributfile["id"]="image";
                 $attributfile["accept"]="images/*";
                 $attributfile["class"]="form-control";
 
                 echo form_error('logo');
-                echo form_upload('logo',set_value('logo'),$attributfile);
+                echo form_upload('image',set_value('logo'),$attributfile);
                 ?>
 				</div>
             </div>
@@ -89,7 +89,7 @@
 
 
 <script>
-    $('#logo').fileinput({
+    $('#image').fileinput({
         language: 'fr',
         allowedFileExtensions : ['jpg', 'png','gif'],
     });

@@ -71,8 +71,12 @@
                 ?>
                <div class="col-md-9">
                 <?php
+                $attributfile=array();
+                $attributfile["id"]="image";
+                $attributfile["accept"]="images/*";
+                $attributfile["class"]="form-control";
                 echo form_error('image');
-                echo form_upload('image',set_value('image'),'class="form-control"');
+                echo form_upload('image',set_value('image'),$attributfile);
                 ?>
 				</div>
             </div>
@@ -82,3 +86,11 @@
     </div>
     </div>
 </div>
+
+
+<script>
+    $('#image').fileinput({
+        language: 'fr',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+</script>
