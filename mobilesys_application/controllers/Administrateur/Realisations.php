@@ -30,7 +30,10 @@ class Realisations extends MY_Controller
 
 
         $data=array();
-		$data["realisations"] = $this->all->read();
+		$data["realisations"] = $this->all->allRealisationSvc();
+        //var_dump($data["realisations"]);
+        //exit();
+
         $data["active"]="Realisations";
 
         $this->layout->views("Administrateur/headerAdmin",$data);

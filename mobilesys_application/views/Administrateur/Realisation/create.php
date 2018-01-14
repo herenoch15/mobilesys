@@ -39,7 +39,7 @@
             </div>
             <div class="form-group">
                 <?php
-                echo form_label('service','Service',array('class'=>"col-md-3"));
+                echo form_label('Service','Service',array('class'=>"col-md-3"));
                 ?>
                 <div class="col-md-9">
                     <?php

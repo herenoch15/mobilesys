@@ -12,11 +12,9 @@ class Realisations_model extends MY_Model
     /**
     * Selection Realisation
     */
-    public function selectRealisationSvc()
+    public function allRealisationSvc()
     {
-        return $this->db->query("select id,realisations.idService as 'idService',titre,nom_service,realisations.description  as 'description',logo_realisation,nom_service 
-                from realisations,services 
-    	 	    where realisations.idService=services.idService")
+        return $this->db->query("select realisations.id as 'id',realisations.id_service as 'idService',titre,nom_service,realisations.description as 'description',image,nom_service from realisations,services where realisations.id_service=services.id ")
                 ->result();
     }
 }
