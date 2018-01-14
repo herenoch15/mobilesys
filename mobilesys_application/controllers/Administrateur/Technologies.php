@@ -152,5 +152,19 @@ class Technologies extends MY_Controller
         $this->layout->view("Administrateur/footerAdmin");
     }
 
+    /**
+     * Suppresion technologie
+     * */
+    public function suppr($id = NULL)
+    {
+        if($this->all->delete(array('id' => $id))){
+            redirect("Administrateur/technologies/");
+        }else{
+            $data["success"]="Error";
+            $data["alert"]="danger";
+        }
+
+    }
+
 }
 ?>

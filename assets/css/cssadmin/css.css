@@ -70,7 +70,8 @@ li#logout
 
 .btnsup_service,
 .btnsup_realisation,
-.btnsup_user
+.btnsup_user,
+.btnsup_technos
 {
     border: 0;
     background: none;

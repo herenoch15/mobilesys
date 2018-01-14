@@ -14,6 +14,21 @@ $(document).ready(function (e)
             keyboard: true,
             show: true});
     });
+
+    //JS Technologies
+    $(document).on("click",'.btnsup_technos',function (e)
+    {
+        idTechnosup=$(this).attr("id");
+        $("#infosTechnos").modal({
+            keyboard: true,
+            show: true});
+    });
+    $(document).on("click","#btnConfirmSup_Techno",function (e)
+    {
+        window.location.href=$("#lienTechno").val()+"/suppr/"+idTechnosup;
+    })
+
+
     $(document).on("click","#btnConfirmSup_SVC",function (e)
     {
         window.location.href=$("#lienSvc").val()+"/suppr/"+idServicesup;

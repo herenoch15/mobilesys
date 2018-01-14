@@ -17,6 +17,9 @@ class Realisations extends MY_Controller
 
     }
 
+    /**
+    * Listes des realisation
+    */
     public function index()
     {
         $this->layout->set_titre("MobileSys Admin | Realisation");
@@ -41,6 +44,9 @@ class Realisations extends MY_Controller
         $this->layout->view("Administrateur/footerAdmin");
 
     }
+    /**
+    * Ajout nouveau Realisation
+     */
     public function create()
     {
         $this->layout->set_titre("MobileSys Admin | Realisation");
@@ -200,6 +206,9 @@ class Realisations extends MY_Controller
         $this->layout->view("Administrateur/footerAdmin");
 
     }
+    /**
+     * Suppresion Realisation
+     **/
     public function suppr($id = NULL)
     {
 			if($this->all->delete(array('id' => $id))){

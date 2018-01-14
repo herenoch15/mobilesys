@@ -186,7 +186,7 @@ class Services extends MY_Controller
     public function suppr($id = NULL)
     {
 			if($this->all->delete(array('id' => $id))){
-				redirect("Administrateur/Services/index");
+				redirect("Administrateur/Services/");
 			}else{
 				$data["success"]="Error";
 				$data["alert"]="danger";
