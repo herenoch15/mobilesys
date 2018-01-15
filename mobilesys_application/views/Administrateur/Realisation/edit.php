@@ -25,6 +25,9 @@
 
             <?php
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_edit');
+            $attribut_formcontrol=array();
+            $attribut_formcontrol["class"]="form-control";
+            $attribut_formcontrol["required"]="form-control";
 			echo form_open_multipart('/Administrateur/realisations/edit/'.$id,$attributes);?>
             
 
@@ -35,7 +38,7 @@
               <div class="col-md-9">
                 <?php 
 				  echo form_error('titre');
-                echo form_input('titre',set_value('titre',$realisations->titre ),'class="form-control"');
+                echo form_input('titre',set_value('titre',$realisations->titre ),$attribut_formcontrol);
                 ?>
 				</div>
             </div>
@@ -50,7 +53,7 @@
                         $svc[$key->id] = $key->nom_service;
                     }
                     echo form_error('service');
-                    echo form_dropdown('service',$svc,$realisations->id_service,'class="form-control"');
+                    echo form_dropdown('service',$svc,$realisations->id_service,$attribut_formcontrol);
                     ?>
                 </div>
             </div>
@@ -61,7 +64,7 @@
 				<div class="col-md-9">
 				<?php
 				echo form_error('description');
-				echo form_textarea('description',set_value('description',$realisations->description),'class="form-control"');
+				echo form_textarea('description',set_value('description',$realisations->description),$attribut_formcontrol);
 				?>
 				</div>
             </div>

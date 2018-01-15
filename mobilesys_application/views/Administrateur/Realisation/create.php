@@ -23,6 +23,9 @@
 		<div class="col-md-6 col-md-offset-3">
             <?php
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_create');
+            $attribut_formcontrol=array();
+            $attribut_formcontrol["class"]="form-control";
+            $attribut_formcontrol["required"]="form-control";
 			echo form_open_multipart('/Administrateur/realisations/create',$attributes);?>
             
 

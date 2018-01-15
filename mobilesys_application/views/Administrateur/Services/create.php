@@ -23,6 +23,9 @@
 		<div  class="col-md-6 col-md-offset-3">
             <?php
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_create');
+            $attribut_formcontrol=array();
+            $attribut_formcontrol["class"]="form-control";
+            $attribut_formcontrol["required"]="form-control";
 			echo form_open_multipart('/Administrateur/services/create',$attributes);?>
             <div class="form-group">
                 <?php
@@ -31,7 +34,7 @@
               <div class="col-md-9">
                 <?php 
 				  echo form_error('nom');
-                echo form_input('nom',set_value('nom'),'class="form-control"');
+                echo form_input('nom',set_value('nom'),$attribut_formcontrol);
                 ?>
 				</div>
             </div>
@@ -42,7 +45,7 @@
 				<div class="col-md-9">
 				<?php
 				echo form_error('description');
-				echo form_textarea('description',set_value('description'),'class="form-control"');
+				echo form_textarea('description',set_value('description'),$attribut_formcontrol);
 				?>
 				</div>
             </div>

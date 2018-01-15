@@ -78,9 +78,26 @@ class Technologies extends MY_Controller
         }
         else
         {
-
-            $data_echape = array();
             $data_echape=$this->input->post();
+
+            $config['upload_path'] = './assets/images/technologies';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $config['overwrite'] = FALSE;
+
+            $this->load->library('upload', $config);
+            $data['error']= "fichier tsy lasa";
+
+            if ( ! $this->upload->do_upload('logo_techno'))
+            {
+                $data['error']= $this->upload->display_errors();
+            }
+            else
+            {
+                $file_name = "technologies/".$this->upload->data('file_name');
+                $data['error'] = 'success';
+                $data_echape = array_merge($data_echape,array(
+                    'logo_techno' => $file_name));
+            }
 
             if($this->all->create($data_echape))
             {
@@ -126,8 +143,6 @@ class Technologies extends MY_Controller
 
         $this->load->model('services_model','Svc');
         $data["services"] = $this->Svc->read();
-
-
         $data['technologie'] = $this->all->read('*',array("id"=>$id))[0];
 
 
@@ -142,6 +157,38 @@ class Technologies extends MY_Controller
         }
         else
         {
+            $data_echape=$this->input->post();
+
+            $config['upload_path'] = './assets/images/technologies';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $config['overwrite'] = FALSE;
+
+            $this->load->library('upload', $config);
+            $data['error']= "upload fichier";
+
+            if ( ! $this->upload->do_upload('logo_techno'))
+            {
+                $data['error']= $this->upload->display_errors();
+            }
+            else
+            {
+                $file_name = "technologies/".$this->upload->data('file_name');
+                $data['error'] = 'success';
+                $data_echape = array_merge($data_echape,array(
+                    'logo_techno' => $file_name));
+            }
+
+
+
+            if($this->all->update(array("id"=>$id),$data_echape))
+            {
+                $data["success"]="Successfull";
+                $data["alert"]="success";
+            }else
+                {
+                $data["success"]="Error";
+                $data["alert"]="danger";
+            }
 
 
 

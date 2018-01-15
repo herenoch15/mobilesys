@@ -24,6 +24,9 @@
             <?php
 
 			$attributes = array('class' => 'form-horizontal', 'id' => 'form_edit');
+            $attribut_formcontrol=array();
+            $attribut_formcontrol["class"]="form-control";
+            $attribut_formcontrol["required"]="form-control";
 			echo form_open_multipart('/Administrateur/services/edit/'.$service->id,$attributes);?>
             <div class="form-group">
                 <?php
@@ -32,7 +35,7 @@
               <div class="col-md-9">
                 <?php 
 				  echo form_error('nom');
-                echo form_input('nom',set_value('nom',$service->nom_service ),'class="form-control"');
+                echo form_input('nom',set_value('nom',$service->nom_service ),$attribut_formcontrol);
                 ?>
 				</div>
             </div>
@@ -43,7 +46,7 @@
 				<div class="col-md-9">
 				<?php
 				echo form_error('description');
-				echo form_textarea('description',set_value('description',$service->description),'class="form-control"');
+				echo form_textarea('description',set_value('description',$service->description),$attribut_formcontrol);
 				?>
 				</div>
             </div>

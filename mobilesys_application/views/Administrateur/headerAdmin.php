@@ -17,6 +17,5 @@
             <li <?php if($active=="user") {?>  class="active" <?php } ?>><a href="<?php print site_url("Administrateur/users"); ?>">Users</a></li>
             <li id="logout"><a href="<?php print (site_url('Administrateur/logout')); ?>"><img  height="25" width="25" src="<?php print site_url("/assets/images/images_admin/imglogoout.png"); ?>"></a></li>
         </ul>
-
     </div>
 </div>

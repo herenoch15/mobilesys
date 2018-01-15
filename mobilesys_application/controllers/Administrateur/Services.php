@@ -73,24 +73,22 @@ class Services extends MY_Controller
 				$config['upload_path'] = './assets/images/services';
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['overwrite'] = FALSE;
-
 				$this->load->library('upload', $config);
                         $data['error']= "fichier tsy lasa";
-				
                 if ( ! $this->upload->do_upload('logo'))
                 {
-                        $data['error']= $this->upload->display_errors();
+                    $data['error']= $this->upload->display_errors();
                 }
                 else
                 {
 					$file_name = "services/".$this->upload->data('file_name');
 
-
                     $data['error'] = 'success';
 					$data_echape = array_merge($data_echape,array(
                 	'logo_service' => $file_name));
                 }
-			if($this->all->create($data_echape)){
+			if($this->all->create($data_echape))
+			{
 				$data["success"]="Successfull";
 				$data["alert"]="success";
 				unset($_POST);

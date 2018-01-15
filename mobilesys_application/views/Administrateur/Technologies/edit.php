@@ -29,7 +29,7 @@
             $attribut_formcontrol=array();
             $attribut_formcontrol["class"]="form-control";
             $attribut_formcontrol["required"]="form-control";
-            echo form_open_multipart('/Administrateur/technologies/create',$attributes);?>
+            echo form_open_multipart('/Administrateur/technologies/edit/'.$technologie->id,$attributes);?>
             <div class="form-group">
                 <?php
                 echo form_label('Nom technologie','nom_techno',array('class'=>"col-md-3"));
